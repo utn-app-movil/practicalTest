@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Census</string>
+    <string name="app_name">PracticalTest</string>
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
     <string name="ErrorMsgAdd">Error when adding the information.</string>
@@ -20,6 +20,22 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="sponsor_header_title">Sponsor</string>
+    <string name="sponsor_id_label">Id Provedor</string>
+    <string name="sponsor_company_name_label">Nombre de la Empresa</string>
+    <string name="sponsor_support_type_label">Tipo de Apoyo</string>
+    <string name="sponsor_support_type_economic">Economico</string>
+    <string name="sponsor_support_type_material">Material</string>
+    <string name="sponsor_support_type_service">Servicio</string>
+    <string name="sponsor_contact_section_label">Contactos</string>
+    <string name="sponsor_contact_name_hint">Nombre del Contacto</string>
+    <string name="sponsor_contact_email_hint">Email del Contacto</string>
+    <string name="sponsor_contact_phone_hint">Número de Teléfono del Contacto</string>
+    <string name="sponsor_support_detail_label">Detalle (Opcional)</string>
+    <string name="MsgDuplicated_Esteban">Id del Provedor duplicado</string>
+    <string name="MsgInvalidData_Esteban">Campos Incompletos</string>
+    <string name="MsgTypeRequired_Esteban">El tipo de servicio es reuqerido.</string>
+    <string name="MsgIdRequired_Esteban">El id del Provedor es reuqerido.</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 

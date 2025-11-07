@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainSponsor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SponsorActivity">
+    <!-- ===== Header ===== -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sponsor_header_title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/save_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/save"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/edit_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/modify"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/delete"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/cancel"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <!-- ===== End Header ===== -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- ID + Buscar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sponsor_id_label"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <EditText
+                        android:id="@+id/txtId_sponsor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="14dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnSearchSponsor"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@android:drawable/ic_search_category_default"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <!-- Nombre Empresa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sponsor_company_name_label"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="start"/>
+
+            <EditText
+                android:id="@+id/txtCompanyName_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Tipo de Apoyo (RadioGroup estilo "check button") -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sponsor_support_type_label"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="start"/>
+
+            <RadioGroup
+                android:id="@+id/rgSupportType_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+                <RadioButton
+                    android:id="@+id/rbEconomic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sponsor_support_type_economic" />
+                <RadioButton
+                    android:id="@+id/rbMaterial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sponsor_support_type_material"/>
+                <RadioButton
+                    android:id="@+id/rbService"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sponsor_support_type_service" />
+            </RadioGroup>
+
+            <!-- Contacto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sponsor_contact_section_label"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="start"/>
+
+            <EditText
+                android:id="@+id/txtContactName_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sponsor_contact_name_hint"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/txtContactEmail_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sponsor_contact_email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/txtContactPhone_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sponsor_contact_phone_hint"
+                android:inputType="phone"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Detalle del apoyo (se usa para MATERIAL / SERVICIO y también como nota en ECONOMICO) -->
+            <TextView
+                android:id="@+id/tvDetailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sponsor_support_detail_label"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="start" />
+
+            <EditText
+                android:id="@+id/txtSupportDetail_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

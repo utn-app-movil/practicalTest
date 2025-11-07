@@ -19,6 +19,22 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+    <string name="sponsor_header_title">Provedor</string>
+    <string name="sponsor_id_label">Id Provedor</string>
+    <string name="sponsor_company_name_label">Nombre de la Empresa</string>
+    <string name="sponsor_support_type_label">Tipo de Apoyo</string>
+    <string name="sponsor_support_type_economic">Economico</string>
+    <string name="sponsor_support_type_material">Material</string>
+    <string name="sponsor_support_type_service">Servicio</string>
+    <string name="sponsor_contact_section_label">Contactos</string>
+    <string name="sponsor_contact_name_hint">Nombre del Contacto</string>
+    <string name="sponsor_contact_email_hint">Email del Contacto</string>
+    <string name="sponsor_contact_phone_hint">Número de Teléfono del Contacto</string>
+    <string name="sponsor_support_detail_label">Detalle (Opcional)</string>
+    <string name="MsgDuplicated_Esteban">Id del Provedor duplicado</string>
+    <string name="MsgInvalidData_Esteban">Campos Incompletos</string>
+    <string name="MsgTypeRequired_Esteban">El tipo de servicio es reuqerido.</string>
+    <string name="MsgIdRequired_Esteban">El id del Provedor es reuqerido.</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
