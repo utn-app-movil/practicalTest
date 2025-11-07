@@ -24,11 +24,10 @@
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
     <string name="ent_title">Gestión de Actividades Deportivas</string>
-    <string name="hint_name">Nombre</string>
-    <string name="hint_desc">Descripción</string>
+    <string name="ent_hint_name">Nombre</string>
+    <string name="ent_hint_desc">Descripción</string>
     <string name="type_tournament">Torneo</string>
     <string name="type_training">Entrenamiento</string>
     <string name="type_team">Equipo</string>
-
 
 </resources>
