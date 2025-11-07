@@ -23,5 +23,11 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="txtDate">Fecha</string>
+    <string name="txtTime">Hora</string>
+    <string name="txtParticipants">Participantes</string>
+    <string name="btnEdit">Editar</string>
+    <string name="btnDelete">Eliminar</string>
+    <string name="btnSave">Guardar</string>
 
 </resources>
