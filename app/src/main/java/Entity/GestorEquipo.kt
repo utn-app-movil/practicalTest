@@ -1,51 +1,17 @@
-package Data
+package Entity
 
-import Entity.Equipo
-import Entity.Person
-
-object MemoryDataManager: IDataManager {
-    private  var personList = mutableListOf<Person>()
-    override fun add(person: Person) {
-        personList.add(person)
-    }
-
-    override fun remove(id: String) {
-        personList.removeIf { it.ID.trim() == id.trim() }
-    }
-
-    override fun update(person: Person) {
-        remove(person.ID)
-        add(person)
-    }
-
-    override fun getAll()= personList
-
-    override fun getById(id: String): Person? {
-        val result = personList.
-            filter { it.ID.trim() == id.trim()}
-        return if(result.any()) result[0] else null
-    }
-
-    override fun getByFullName(fullName: String): Person? {
-        val result = personList.
-        filter { it.FullName() == fullName.trim()}
-        return if(result.any()) result[0] else null
-    }
-
+class GestorEquipo {
     private val listaEquipos = mutableListOf<Equipo>()
     private var nextId = 1
-
 
     fun agregarEquipo(nombre: String, descripcion: String, precio: Double, disponible: Boolean) {
         val nuevoEquipo = Equipo(nextId++, nombre, descripcion, precio, disponible)
         listaEquipos.add(nuevoEquipo)
     }
 
-
     fun obtenerEquipos(): List<Equipo> {
         return listaEquipos
     }
-
 
     fun actualizarEquipo(id: Int, nombre: String, descripcion: String, precio: Double, disponible: Boolean): Boolean {
         val equipo = listaEquipos.find { it.id == id }
@@ -59,10 +25,8 @@ object MemoryDataManager: IDataManager {
         return false
     }
 
-
     fun eliminarEquipo(id: Int): Boolean {
         return listaEquipos.removeIf { it.id == id }
     }
-
 
 }
