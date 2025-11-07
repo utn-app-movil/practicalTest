@@ -24,4 +24,11 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="ent_title">Sports Activities Management</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_desc">Description</string>
+    <string name="type_tournament">Tournament</string>
+    <string name="type_training">Training</string>
+    <string name="type_team">Team</string>
+
 </resources>

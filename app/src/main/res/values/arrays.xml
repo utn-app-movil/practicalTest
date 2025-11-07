@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ent_types">
+        <item>Torneo</item>
+        <item>Entrenamiento</item>
+        <item>Equipo</item>
+    </string-array>
+</resources>
