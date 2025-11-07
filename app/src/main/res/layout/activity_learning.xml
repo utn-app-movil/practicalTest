@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la pantalla (ActionBar ya muestra el título también) -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/learning_title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Formulario -->
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/learning_field_title"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/etSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/learning_field_schedule"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etProfessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/learning_field_professor"
+        android:inputType="textCapWords" />
+
+    <!-- Separador -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="#33000000" />
+
+    <!-- Estado vacío -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/learning_empty"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+    <!-- Lista -->
+    <ListView
+        android:id="@+id/lvClasses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="6dp"
+        android:listSelector="?android:attr/activatedBackgroundIndicator" />
+
+</LinearLayout>
