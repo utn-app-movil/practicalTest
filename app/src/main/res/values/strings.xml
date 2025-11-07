@@ -19,9 +19,28 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+
+    <!-- Texto para Iniciar -->
+
+
+    <!-- Texto para campos -->
+    <string name="TextTickerId">Id de tiquete</string>
+    <string name="TxtCustomerName">Nombre del Cliente</string>
+    <string name="TxtMovieTitle">Titulo de la pelicula</string>
+    <string name="TxtMovieDate">Fecha de funcion</string>
+    <string name="TxtQuantityTickets">Cantidad de Boletos</string>
+    <string name="TxtUnitPrice">Precio Unitario</string>
+    <string name="TxtTotalPrice">Precio Total</string>
+
+    <!-- Texto para Mensajes -->
+    <string name="MsgIncompleteData">Datos Incompletos</string>
+    <string name="MsgInvalidQuantity">Cantidad Invalida</string>
+    <string name="MsgInvalidPrice">Precio Invalido</string>
+    <string name="AddFunctions">Añadir Funciones</string>
 
 </resources>

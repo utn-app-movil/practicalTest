@@ -20,6 +20,17 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="TextTickerId">ID Ticket</string>
+    <string name="TxtCustomerName">Customer Name</string>
+    <string name="TxtMovieTitle">Movie Title</string>
+    <string name="TxtMovieDate">Movie Date</string>
+    <string name="TxtQuantityTickets">Number of Tickets</string>
+    <string name="TxtUnitPrice">Unity Price</string>
+    <string name="TxtTotalPrice">Total Price</string>
+    <string name="MsgIncompleteData">Incomplete Data</string>
+    <string name="MsgInvalidQuantity">Invalid Quantity</string>
+    <string name="MsgInvalidPrice">Invalid Price</string>
+    <string name="AddFunctions">Add Functions</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
