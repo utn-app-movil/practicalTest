@@ -23,5 +23,11 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <!-- ===== Learning Activity (ES) ===== -->
+    <string name="learning_title">Gestión de Actividades Deportivas</string>
+    <string name="learning_field_title">Nombre de la actividad</string>
+    <string name="learning_field_schedule">Horario</string>
+    <string name="learning_field_professor">Profesor</string>
+    <string name="learning_empty">No hay actividades registradas. Usa Guardar para agregar.</string>
 
 </resources>
