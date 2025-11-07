@@ -1,12 +1,11 @@
 package Data
 
-import Entity.Person
+import Entity.Event
 
 interface IDataManager {
-    fun add (person: Person)
-    fun update (person: Person)
-    fun remove (id: String)
-    fun getAll(): List<Person>
-    fun getById(id: String): Person?
-    fun getByFullName(fullName: String): Person?
+    fun add(event: Event)
+    fun update(event: Event)
+    fun remove(id: String)
+    fun getAll(): List<Event>
+    fun getById(id: String): Event?
 }
