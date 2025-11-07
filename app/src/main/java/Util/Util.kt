@@ -17,7 +17,7 @@ class Util {
         fun openActivity(context: Context
                          , objClass: Class<*>){
             val intent= Intent(context
-                , objClass)
+                    , objClass)
             context.startActivity(intent)
         }
 
