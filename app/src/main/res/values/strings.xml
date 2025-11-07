@@ -23,5 +23,13 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="txtPlate">Numero Placa</string>
+    <string name="txtOwner">Propietario</string>
+    <string name="txtBrand">Marca</string>
+    <string name="txtModel">Modelo</string>
+    <string name="txtColor">Color</string>
+    <string name="textID">ID</string>
+    <string name="btnClear_Agregar">Limpiar</string>
+
 
 </resources>

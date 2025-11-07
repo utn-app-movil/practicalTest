@@ -24,4 +24,14 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+
+    <string name="txtPlate">number Place</string>
+    <string name="txtOwner">owner</string>
+    <string name="txtBrand">Brand</string>
+    <string name="txtModel">model</string>
+    <string name="txtColor">Color</string>
+    <string name="textID">ID</string>
+    <string name="btnClear_Agregar">clean</string>
+
+
 </resources>

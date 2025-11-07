@@ -12,12 +12,12 @@ import java.time.format.DateTimeFormatter
 import java.util.Date
 import java.util.Locale
 
-class Util {
+class UtilVehicle {
     companion object{
         fun openActivity(context: Context
                          , objClass: Class<*>){
             val intent= Intent(context
-                    , objClass)
+                , objClass)
             context.startActivity(intent)
         }
 
