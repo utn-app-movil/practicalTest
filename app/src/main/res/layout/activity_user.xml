@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView_ID_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/TextIDUser" />
+
+            <EditText
+                android:id="@+id/txtID_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="text" />
+
+            <ImageButton
+                android:id="@+id/btnSearchId_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView_Name_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/TextNameUser" />
+
+            <EditText
+                android:id="@+id/txtName_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView_FLastName_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/TextFLastnameUser" />
+
+            <EditText
+                android:id="@+id/txtFLastName_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView_SLastName_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/TextSLastnameUser" />
+
+            <EditText
+                android:id="@+id/txtSLastName_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView_Email_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/TextEmailUser" />
+
+            <EditText
+                android:id="@+id/txtEmail_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtView_Password_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/TextPasswordUser" />
+
+            <EditText
+                android:id="@+id/txtPassword_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listView_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

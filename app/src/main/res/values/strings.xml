@@ -24,4 +24,16 @@
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
 
+    <!-- USER -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="TextIDUser">Identificador *</string>
+    <string name="TextNameUser">Nombre *</string>
+    <string name="TextFLastnameUser">Apellido *</string>
+    <string name="TextSLastnameUser">Segundo apellido *</string>
+    <string name="TextPasswordUser">Contraseña *</string>
+    <string name="TextEmailUser">Correo *</string>
+    <string name="btnUserList">Lista usuarios</string>
+    <string name="btnAddUser">Agregar usuario</string>
+
+    <!-- FIN USER -->
 </resources>
