@@ -33,7 +33,7 @@
     <string name="TextPasswordUser">Contraseña *</string>
     <string name="TextEmailUser">Correo *</string>
     <string name="btnUserList">Lista usuarios</string>
-    <string name="btnAddUser">Agregar usuario</string>
+    <string name="btnLoadUser">Gestionar usuarios</string>
 
     <!-- FIN USER -->
 </resources>

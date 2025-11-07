@@ -44,4 +44,8 @@ class User {
     var Email: String
         get() = this.email
         set(value) { this.email = value }
+
+    override fun toString(): String {
+        return this.id + " - " + this.name + " " + this.fLastName + " " + this.sLastName
+    }
 }

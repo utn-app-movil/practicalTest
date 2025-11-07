@@ -144,8 +144,15 @@ class UserActivity : AppCompatActivity() {
     fun loadUsers() {
         try {
             val listUsers = userController.getAll()
-            val adapter = ArrayAdapter(this, listUsers.size, listUsers)
+            val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,
+                listUsers)
             listView.adapter = adapter
+
+            listView.setOnItemClickListener { parent, view, position, id ->
+                val userSelected = listUsers[position]
+                val userID = userSelected.toString().split(" - ")[0]
+                searchUser(userID)
+            }
         } catch (e: Exception) {
             Toast.makeText(
                 this, e.message.toString(),
