@@ -8,24 +8,20 @@ class Recipe(
     var cookTime: Int = 0, // minutos
     var difficulty: String = "Fácil",
     var servings: Int = 1,
-    var category: String = ""
+    var category: String = "",
+    var steps: String = ""
 ) {
-    // Listas importantes
+    // Lista importante
     var ingredients: MutableList<Ingredient> = mutableListOf()
-    var steps: MutableList<String> = mutableListOf()
-    var tags: MutableList<String> = mutableListOf()
+
+
 
     // Constructor vacío
-    constructor() : this("", "", "", 0, 0, "", 1, "")
+    constructor() : this("", "", "", 0, 0, "", 1, "", "")
 
 
-    fun addIngredient(ingredient: Ingredient) {
-        ingredients.add(ingredient)
-    }
 
-    fun addStep(step: String) {
-        steps.add(step)
-    }
+
 
     fun getTotalTime(): Int = prepTime + cookTime
 
@@ -35,6 +31,8 @@ class Recipe(
         println("Tiempo total: ${getTotalTime()} minutos")
         println("Porciones: $servings")
         println("Dificultad: $difficulty")
+        println("Categoria: $category")
+        println("Pasos a seguir: $steps")
 
         println("\n--- Ingredientes ---")
         ingredients.forEach { ingredient ->
