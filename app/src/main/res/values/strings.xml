@@ -19,9 +19,14 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+    <string name="GetAllTask">Mostrar la tarea</string>
+    <string name="getname">muestrame el nombre</string>
+    <string name="getremove">mover</string>
+    <string name="Getadd">mostara lo agrgado</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+
 
 </resources>

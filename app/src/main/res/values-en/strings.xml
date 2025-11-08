@@ -20,6 +20,10 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="GetAllTask">The data was no found</string>
+    <string name="getname">"The view name "</string>
+    <string name="getremove">"the task remove "</string>
+    <string name="Getadd">the Task Add</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
