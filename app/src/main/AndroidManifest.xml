@@ -12,8 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticalTest">
         <activity
-            android:name=".SurveyActivity"
+            android:name=".Item_EventActivity"
             android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false"
+            android:label="Gestión de Eventos" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,6 +27,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FilmActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

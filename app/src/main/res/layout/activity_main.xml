@@ -70,7 +70,7 @@
                 android:id="@+id/btnSurvey_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Survey" />
+                android:text="Survery" />
 
             <Button
                 android:id="@+id/btnReceipt_main"
@@ -183,7 +183,7 @@
                 android:text="Rent" />
         </TableRow>
 
-        <TableRow
+         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -193,11 +193,11 @@
                 android:layout_height="wrap_content"
                 android:text="Learning" />
 
-            <Button
-                android:id="@+id/btnHarvest_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Harvest" />
+             <Button
+                 android:id="@+id/btnHarvest_main"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Harvest" />
         </TableRow>
 
         <TableRow
