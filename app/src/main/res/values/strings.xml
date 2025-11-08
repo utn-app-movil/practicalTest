@@ -24,4 +24,62 @@
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
 
+
+
+    <!-- ===== Learning Activity (ES) ===== -->
+    <string name="learning_title">Gestión de Actividades Deportivas</string>
+    <string name="learning_field_title">Nombre de la actividad</string>
+    <string name="learning_field_schedule">Horario</string>
+    <string name="learning_field_professor">Profesor</string>
+    <string name="learning_empty">No hay actividades registradas. Usa Guardar para agregar.</string>
+
+    <!-- USER -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="TextIDUser">Identificador *</string>
+    <string name="TextNameUser">Nombre *</string>
+    <string name="TextFLastnameUser">Apellido *</string>
+    <string name="TextSLastnameUser">Segundo apellido *</string>
+    <string name="TextPasswordUser">Contraseña *</string>
+    <string name="TextEmailUser">Correo *</string>
+    <string name="btnUserList">Lista usuarios</string>
+    <string name="btnLoadUser">Gestionar usuarios</string>
+
+    <!-- FIN USER -->
+
+    <!-- Participant -->
+    <string name="participant_registration_title">Registro de Participante</string>
+    <string name="participant_id_hint">Cédula</string>
+    <string name="participant_name_hint">Nombre</string>
+    <string name="participant_flastname_hint">Primer Apellido</string>
+    <string name="participant_slastname_hint">Segundo Apellido</string>
+    <string name="participant_email_hint">Correo Electrónico</string>
+    <string name="participant_phone_hint">Teléfono</string>
+    <string name="participant_birthday_label">Fecha de Nacimiento</string>
+    <string name="participant_birthday_hint">Seleccionar fecha</string>
+    <string name="participant_saved_message">Participante guardado.</string>
+    <string name="participant_deleted_message">Participante eliminado.</string>
+    <string name="fill_required_fields_message">Por favor, complete todos los campos requeridos.</string>
+    <!-- Schedule -->
+    <string name="hint_schedule_id">ID</string>
+    <string name="hint_schedule_day">Día</string>
+    <string name="hint_schedule_startTime">Seleccionar hora de inicio</string>
+    <string name="hint_schedule_endTime">Seleccionar hora de fin</string>
+    <string name="hint_schedule_location">Ubicación</string>
+    <string name="msg_fill_all_fields">Por favor complete todos los campos</string>
+    <string name="msg_schedule_saved">Horario guardado correctamente</string>
+    <string name="msg_schedule_error">Error al guardar el horario</string>
+    <string name="msg_schedule_deleted">Horario eliminado</string>
+    <string name="msg_schedule_not_found">No se encontró el horario con ese ID</string>
+
+    <!-- Volunteer-->
+    <string name="volunteering_activity_title">Registro de Actividad Voluntaria</string>
+    <string name="hint_activity_id">ID de la actividad</string>
+    <string name="hint_activity_title">Título de la actividad</string>
+    <string name="hint_activity_description">Descripción</string>
+    <string name="hint_activity_schedule">Seleccione un horario</string>
+    <string name="msg_activity_saved">Actividad guardada correctamente</string>
+    <string name="msg_activity_error">Error al guardar la actividad</string>
+    <string name="msg_activity_deleted">Actividad eliminada</string>
+    <string name="msg_activity_not_found">No se encontró la actividad con ese ID</string>
+
 </resources>
