@@ -13,6 +13,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import Util.Util
 
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnUser = findViewById<Button>(R.id.btnUser_main)
         btnUser.setOnClickListener(View.OnClickListener{ view ->
-            Util.Util.openActivity(this, UserActivity::class.java)
+            Util.openActivity(this, UserActivity::class.java)
 
         })
 
@@ -155,6 +157,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnRecipe = findViewById<Button>(R.id.btnRecipe_main)
+        btnRecipe.setOnClickListener {
+            val intent = Intent(this, RecipeActivity::class.java)
+            startActivity(intent)
+        }
         btnRecipe.setOnClickListener(View.OnClickListener{ view->
 
         })
