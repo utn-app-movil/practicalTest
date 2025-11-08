@@ -20,6 +20,15 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="RegisterActivityTitle">Receipt Registry</string>
+    <string name="EmitterName">Emitter Name</string>
+    <string name="ReceiverName">Receiver Name</string>
+    <string name="ReceiverFiscId">Receiver Fiscal ID</string>
+    <string name="EmitterFiscId">Emitter Fiscal ID</string>
+    <string name="ReceiptId">Receipt ID</string>
+    <string name="ReceiptDescription">Description</string>
+    <string name="TaxRate">Tax Rate</string>
+    <string name="MsgIncompleteData">Incomplete Data</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
