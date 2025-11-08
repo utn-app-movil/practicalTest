@@ -8,5 +8,6 @@ interface IDataManager {
     fun remove (id: String)
     fun getAll(): List<Person>
     fun getById(id: String): Person?
-    fun getByFullName(fullName: String): Person?
+
+    fun getByFullName(id: String): Person?
 }

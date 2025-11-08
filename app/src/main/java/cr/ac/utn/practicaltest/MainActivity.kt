@@ -1,5 +1,6 @@
 package cr.ac.utn.practicaltest
 
+import Util.Util
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnVehicle = findViewById<Button>(R.id.btnVehicle_main)
         btnVehicle.setOnClickListener(View.OnClickListener{ view->
+            Util.openActivity(this, VehicleActivity::class.java)
             
         })
 
@@ -148,5 +150,7 @@ class MainActivity : AppCompatActivity() {
         btnRecipe.setOnClickListener(View.OnClickListener{ view->
             
         })
+
+
     }
 }

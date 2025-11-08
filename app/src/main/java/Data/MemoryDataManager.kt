@@ -25,10 +25,11 @@ object MemoryDataManager: IDataManager {
         return if(result.any()) result[0] else null
     }
 
-    override fun getByFullName(fullName: String): Person? {
-        val result = personList.
-        filter { it.FullName() == fullName.trim()}
+    override fun getByFullName(fullname: String): Person? {
+        val result = personList.filter { it.FullName() == fullname.trim() }
+        //Lo siguiente valida que el primer modulo de la lista esta lleno
         return if(result.any()) result[0] else null
     }
+
 
 }
