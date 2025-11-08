@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Census</string>
+    <string name="app_name">PracticalTest</string>
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
     <string name="ErrorMsgAdd">Error when adding the information.</string>
@@ -20,8 +20,35 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="learning_title">Learning Activity</string>
+    <string name="learning_add_title">New class</string>
+    <string name="learning_edit_title">Edit class</string>
+    <string name="learning_delete_title">Delete class</string>
+    <string name="learning_delete_question">Do you want to delete this class?</string>
+    <string name="learning_field_title">Class name</string>
+    <string name="learning_field_schedule">Schedule</string>
+    <string name="learning_field_professor">Professor</string>
+    <string name="msg_required">Required</string>
+    <string name="action_add">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="learning_empty">No activities yet. Use Save to add.</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+
+    <!-- USER -->
+    <string name="MsgIncompleteData">Incomplete data</string>
+    <string name="TextIDUser">"ID * "</string>
+    <string name="TextNameUser">Name *</string>
+    <string name="TextFLastnameUser">First lastname *</string>
+    <string name="TextSLastnameUser">Second lastname *</string>
+    <string name="TextPasswordUser">Password *</string>
+    <string name="TextEmailUser">Email *</string>
+    <string name="btnUserList">User list</string>
+    <string name="btnLoadUser">Manage user</string>
+
+    <!-- FIN USER -->
 </resources>

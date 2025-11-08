@@ -23,5 +23,23 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <!-- ===== Learning Activity (ES) ===== -->
+    <string name="learning_title">Gestión de Actividades Deportivas</string>
+    <string name="learning_field_title">Nombre de la actividad</string>
+    <string name="learning_field_schedule">Horario</string>
+    <string name="learning_field_professor">Profesor</string>
+    <string name="learning_empty">No hay actividades registradas. Usa Guardar para agregar.</string>
 
+    <!-- USER -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="TextIDUser">Identificador *</string>
+    <string name="TextNameUser">Nombre *</string>
+    <string name="TextFLastnameUser">Apellido *</string>
+    <string name="TextSLastnameUser">Segundo apellido *</string>
+    <string name="TextPasswordUser">Contraseña *</string>
+    <string name="TextEmailUser">Correo *</string>
+    <string name="btnUserList">Lista usuarios</string>
+    <string name="btnLoadUser">Gestionar usuarios</string>
+
+    <!-- FIN USER -->
 </resources>
