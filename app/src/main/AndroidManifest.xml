@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticalTest">
         <activity
+            android:name=".Item_EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false"
+            android:label="Gestión de Eventos" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
