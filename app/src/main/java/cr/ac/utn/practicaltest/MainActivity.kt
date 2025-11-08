@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -110,9 +111,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnLibrary = findViewById<Button>(R.id.btnLibrary_main)
-        btnLibrary.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnLibrary.setOnClickListener {
+            val intent = Intent(this, LibraryActivity::class.java)
+            startActivity(intent)
+        }
 
         val btnRent = findViewById<Button>(R.id.btnRent_main)
         btnRent.setOnClickListener(View.OnClickListener{ view->

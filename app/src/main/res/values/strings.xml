@@ -19,6 +19,8 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+    <string name="ErrorMsgGetByTitle">El título del libro no fue encontrado</string>
+    <string name="ErroMsgGetByAuthor">El autor del libro no fué encontrado</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
