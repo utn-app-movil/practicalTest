@@ -1,5 +1,6 @@
 package cr.ac.utn.practicaltest
 
+import Util.Util
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -96,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnInventory = findViewById<Button>(R.id.btnInventory_main)
         btnInventory.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, InventoryActivity:: class.java)
         })
 
         val btnVolunteer = findViewById<Button>(R.id.btnVolunteer_main)

@@ -24,4 +24,10 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Resource name</string>
+    <string name="TextCategory">Category</string>
+    <string name="TextQuantity">Quantity</string>
+    <string name="TextProvider">Provider</string>
+    <string name="btnSaveInventory">Save inventory</string>
 </resources>
