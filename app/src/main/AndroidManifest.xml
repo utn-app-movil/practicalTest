@@ -30,6 +30,9 @@
         <activity
             android:name=".FilmActivity"
             android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="false"/>
 
     </application>
 
