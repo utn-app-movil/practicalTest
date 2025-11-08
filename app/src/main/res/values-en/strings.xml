@@ -50,5 +50,33 @@
     <string name="btnUserList">User list</string>
     <string name="btnLoadUser">Manage user</string>
 
+
+    <!-- ===== Harvest (CRUD Crops) ===== -->
+    <string name="harvest_title">Harvest Management</string>
+    <string name="hint_crop_name">Crop name</string>
+    <string name="hint_responsible">Responsible</string>
+    <string name="hint_sow_date">Sowing date (dd/mm/yyyy)</string>
+    <string name="hint_harvest_date">Harvest date (dd/mm/yyyy)</string>
+
+    <!-- Buttons (for this screen) -->
+    <string name="add">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+
+    <!-- Messages -->
+    <string name="msg_saved">Information saved successfully.</string>
+    <string name="msg_updated">Updated</string>
+    <string name="msg_deleted">Deleted</string>
+    <string name="msg_fill_fields">Please complete all fields</string>
+    <string name="msg_select_item">Select an item first</string>
+    <string name="msg_confirm_delete">Delete this record?</string>
+
+    <!-- Labels used in the list -->
+    <string name="lbl_sow">Sowing</string>
+    <string name="lbl_harvest">Harvest</string>
+
+
     <!-- FIN USER -->
 </resources>

@@ -40,6 +40,35 @@
     <string name="TextEmailUser">Correo *</string>
     <string name="btnUserList">Lista usuarios</string>
     <string name="btnLoadUser">Gestionar usuarios</string>
+    <string name="title_activity_harvest">HarvestActivity</string>
+
+
+    <!-- ===== Harvest (CRUD Cultivos) ===== -->
+    <string name="harvest_title">Gestión de Cultivos</string>
+    <string name="hint_crop_name">Nombre del cultivo</string>
+    <string name="hint_responsible">Responsable</string>
+    <string name="hint_sow_date">Fecha de siembra (dd/mm/aaaa)</string>
+    <string name="hint_harvest_date">Fecha de cosecha (dd/mm/aaaa)</string>
+
+    <!-- Botones (propios de esta pantalla) -->
+    <string name="add">Guardar</string>
+    <string name="update">Actualizar</string>
+    <string name="delete">Eliminar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="back">Volver</string>
+
+    <!-- Mensajes -->
+    <string name="msg_saved">La información se guardó con éxito</string>
+    <string name="msg_updated">Actualizado</string>
+    <string name="msg_deleted">Eliminado</string>
+    <string name="msg_fill_fields">Complete todos los campos</string>
+    <string name="msg_select_item">Seleccione un elemento primero</string>
+    <string name="msg_confirm_delete">¿Eliminar este registro?</string>
+
+    <!-- Etiquetas para mostrar en la lista -->
+    <string name="lbl_sow">Siembra</string>
+    <string name="lbl_harvest">Cosecha</string>
+
 
     <!-- FIN USER -->
 </resources>
