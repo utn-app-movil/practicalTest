@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +32,8 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
-        btnNews.setOnClickListener(View.OnClickListener{ view->
-
-        })
+        btnNews.setOnClickListener {
+        }
 
         val btnTask = findViewById<Button>(R.id.btnTask_main)
         btnTask.setOnClickListener(View.OnClickListener{ view->
