@@ -1,5 +1,6 @@
 package cr.ac.utn.practicaltest
 
+import Util.Util
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -143,7 +144,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnFilm = findViewById<Button>(R.id.btnFilm_main)
         btnFilm.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, FilmActivity::class.java)
         })
 
         val btnRecipe = findViewById<Button>(R.id.btnRecipe_main)
