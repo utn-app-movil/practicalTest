@@ -20,6 +20,12 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="title_meeting_activity">Meetings</string>
+    <string name="add_meeting">Add a meeting</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add_meeting_dialog_title">Add meeting</string>
+    <string name="edit_meeting_dialog_title">Edit meeting</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
