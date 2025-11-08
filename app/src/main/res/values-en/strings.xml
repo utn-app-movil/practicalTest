@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Census</string>
+    <string name="app_name">Practical Test</string>
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
     <string name="ErrorMsgAdd">Error when adding the information.</string>
