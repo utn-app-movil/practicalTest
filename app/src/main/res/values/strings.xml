@@ -23,6 +23,14 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="estado_civil_prompt" translatable="false">* Estado civil</string>
+    <string-array name="estado_civil">
+        <item>Soltero/a</item>
+        <item>Casado/a</item>
+        <item>Unión libre</item>
+        <item>Divorciado/a</item>
+        <item>Viudo/a</item>
+    </string-array>
 
     <string name="TestID">Cedula</string>
     <string name="TextName">Nombre</string>
