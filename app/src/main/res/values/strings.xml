@@ -23,5 +23,21 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
-
+    <string name="ElecServ">Incidencia Eléctrica</string>
+    <string name="WatServ">Incidencia de Agua</string>
+    <string name="SecServ">Incidencia de Seguridad</string>
+    <string name="incident_title">Gestión de Incidencias</string>
+    <string name="nameofReport">Nombre del Reportante</string>
+    <string name="located">Ubicación (ej. Calle, Nº, Piso)</string>
+    <string name="descriptionIssue">Descripción del problema</string>
+    <string name="savebtn">Guardar</string>
+    <string name="severity_label">Severidad</string>
+    <string name="date_label">Fecha</string>
+    <string name="report_saved">Reporte guardado</string>
+    <string name="severity_low">Baja</string>
+    <string name="severity_medium">Media</string>
+    <string name="severity_high">Alta</string>
+    <string name="error_required_fields">Complete ubicación y descripción</string>
+    <string name="saved_and_close">Reporte guardado y cerrado</string>
+    <string name="severity_prompt">Seleccione severidad</string>
 </resources>
