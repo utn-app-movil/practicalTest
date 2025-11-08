@@ -1,6 +1,8 @@
 package cr.ac.utn.practicaltest
 
 import Util.Util
+import Controller.Incident.IncidentActivity
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -76,9 +78,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnIncident = findViewById<Button>(R.id.btnIncident_main)
-        btnIncident.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnIncident.setOnClickListener {
+            Util.openActivity(this, IncidentActivity::class.java)
+        }
 
         val btnVehicle = findViewById<Button>(R.id.btnVehicle_main)
         btnVehicle.setOnClickListener(View.OnClickListener{ view->
