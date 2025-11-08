@@ -20,10 +20,13 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
+
         }
 
         val btnUser = findViewById<Button>(R.id.btnUser_main)
-        btnUser.setOnClickListener(View.OnClickListener{ view->
+        btnUser.setOnClickListener(View.OnClickListener{ view ->
+            Util.Util.openActivity(this, UserActivity::class.java)
 
         })
 

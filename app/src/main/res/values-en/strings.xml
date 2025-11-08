@@ -20,6 +20,16 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="TestID">ID</string>
+    <string name="TextName">Name</string>
+    <string name="Textflastname">First Last Name</string>
+    <string name="Textslastname">Second Last Name</string>
+    <string name="Textphone">Phone</string>
+    <string name="Textemail">Email</string>
+    <string name="Textstate">State</string>
+    <string name="Textdistrict">District</string>
+    <string name="Textaddress">Address</string>
+    <string name="Textsave">Save</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
