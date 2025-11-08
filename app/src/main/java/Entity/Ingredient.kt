@@ -9,7 +9,7 @@ class Ingredient( //constructor con parametros
     var notes: String = ""
 ) {
     // Constructor vacío
-    constructor() : this("", 0.0, "", "", false, "")
+
 
    //obtener una descripcion del ingrediente
     fun getDescription(): String {
