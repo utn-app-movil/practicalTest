@@ -4,10 +4,6 @@ import cr.ac.utn.practicaltest.Entity.Team
 import cr.ac.utn.practicaltest.Entity.Tournament
 import cr.ac.utn.practicaltest.Entity.Training
 
-/**
- * Repositorio en memoria para la pantalla Entertainment.
- * No interfiere con los repos/DM del profesor.
- */
 object EntertainmentMemoryRepository : IEntertainmentRepository {
 
     private val tournaments = mutableListOf<Tournament>()
