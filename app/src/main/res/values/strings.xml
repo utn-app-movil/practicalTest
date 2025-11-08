@@ -24,13 +24,31 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
-    <string name="btnClasses_Learning">Clases Disponibles</string>
-    <string name="btnSchedule_Learning">Mis horarios</string>
-    <string name="btnProfessors_Learning">Profesores</string>
-    <string name="btnBack_Class">Volver</string>
-    <string name="btnBack_Professor">Volver</string>
-    <string name="btnBack_Schedule">Volver</string>
-    <string name="btnSelect_class">Seleccionar</string>
-    <string name="btnSelect_class2">Seleccionar</string>
-    <string name="btnSelect_class3">Seleccionar</string>
+    <string name="estado_civil_prompt" translatable="false">* Estado civil</string>
+    <string-array name="estado_civil">
+        <item>Soltero/a</item>
+        <item>Casado/a</item>
+        <item>Unión libre</item>
+        <item>Divorciado/a</item>
+        <item>Viudo/a</item>
+    </string-array>
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Nombre de recurso</string>
+    <string name="TextCategory">Categoria</string>
+    <string name="TextQuantity">Cantidad</string>
+    <string name="TextProvider">Proveedor</string>
+    <string name="btnSaveInventory">Guardar inventario</string>
+
+    <string name="TestID">Cedula</string>
+    <string name="TextName">Nombre</string>
+    <string name="Textflastname">Primer Apellido</string>
+    <string name="Textslastname">Segundo apellido</string>
+    <string name="Textphone">Telefono</string>
+    <string name="Textemail">Correo</string>
+    <string name="Textstate">Estado</string>
+    <string name="Textdistrict">Distrito</string>
+    <string name="Textaddress">Direccion</string>
+    <string name="Textsave">Guardar</string>
+
+
 </resources>
