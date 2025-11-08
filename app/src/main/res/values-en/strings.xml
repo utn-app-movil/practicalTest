@@ -20,10 +20,41 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
-    <string name="MsgDuplicateData">The info is duplicated</string>
-    <string name="MsgMissingData">It`s necessary info</string>
+    <string name="TestID">ID</string>
+    <string name="TextName">Name</string>
+    <string name="Textflastname">First Last Name</string>
+    <string name="Textslastname">Second Last Name</string>
+    <string name="Textphone">Phone</string>
+    <string name="Textemail">Email</string>
+    <string name="Textstate">State</string>
+    <string name="Textdistrict">District</string>
+    <string name="Textaddress">Address</string>
+    <string name="Textsave">Save</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="ElecServ">Electrical Incident</string>
+    <string name="WatServ">Water Incident</string>
+    <string name="SecServ">Security Incident</string>
+    <string name="incident_title">Incident Management</string>
+    <string name="nameofReport">Reporter Name</string>
+    <string name="located">Location (e.g. Street, Nº, Floor)</string>
+    <string name="descriptionIssue">Issue description</string>
+    <string name="savebtn">Save</string>
+    <string name="severity_label">Severity</string>
+    <string name="date_label">Date</string>
+    <string name="report_saved">Report saved</string>
+    <string name="severity_low">Low</string>
+    <string name="severity_medium">Medium</string>
+    <string name="severity_high">High</string>
+    <string name="error_required_fields">Please complete location and description</string>
+    <string name="saved_and_close">Report saved and closed</string>
+    <string name="severity_prompt">Select severity</string>
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Resource name</string>
+    <string name="TextCategory">Category</string>
+    <string name="TextQuantity">Quantity</string>
+    <string name="TextProvider">Provider</string>
+    <string name="btnSaveInventory">Save inventory</string>
 </resources>
