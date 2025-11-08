@@ -51,4 +51,23 @@
         <item>Divorciado/a</item>
         <item>Viudo/a</item>
     </string-array>
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Nombre de recurso</string>
+    <string name="TextCategory">Categoria</string>
+    <string name="TextQuantity">Cantidad</string>
+    <string name="TextProvider">Proveedor</string>
+    <string name="btnSaveInventory">Guardar inventario</string>
+
+    <string name="TestID">Cedula</string>
+    <string name="TextName">Nombre</string>
+    <string name="Textflastname">Primer Apellido</string>
+    <string name="Textslastname">Segundo apellido</string>
+    <string name="Textphone">Telefono</string>
+    <string name="Textemail">Correo</string>
+    <string name="Textstate">Estado</string>
+    <string name="Textdistrict">Distrito</string>
+    <string name="Textaddress">Direccion</string>
+    <string name="Textsave">Guardar</string>
+
+
 </resources>
