@@ -7,203 +7,231 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableLayout
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:stretchColumns="*"
-            android:padding="16dp">
+            android:layout_height="match_parent">
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnUser_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="User" />
+            <Button
+                android:id="@+id/btnUser_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User" />
 
-                <Button
-                    android:id="@+id/btnEvent_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Event" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnEvent_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event" />
+        </TableRow>
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnNews_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="News" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnNews_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News" />
 
-                <Button
-                    android:id="@+id/btnTask_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Task" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnTask_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task" />
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnProduct_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Product" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/btnBooking_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Booking" />
-            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnSurvery_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Survey" />
+            <Button
+                android:id="@+id/btnProduct_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product" />
 
-                <Button
-                    android:id="@+id/btnReceipt_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Receipt" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnBooking_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking" />
+        </TableRow>
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnService_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Service" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/btnSupplier_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Supplier" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnSurvey_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Survery" />
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnIncident_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Incident" />
+            <Button
+                android:id="@+id/btnReceipt_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receipt" />
 
-                <Button
-                    android:id="@+id/btnVehicle_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vehicle" />
-            </TableRow>
+        </TableRow>
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnVisit_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Visit" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <!--Open MeetingActivity.kt -->
-                <Button
-                    android:id="@+id/btnMeeting_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Meeting"
-                    android:backgroundTint="@android:color/holo_blue_light"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnService_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service" />
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnInventory_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Inventory" />
+            <Button
+                android:id="@+id/btnSupplier_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supplier" />
 
-                <Button
-                    android:id="@+id/btnTraining_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Training" />
-            </TableRow>
+        </TableRow>
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnVolunteer_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Volunteer" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/btnEntertainment_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Entertainment" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnIncident_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incident" />
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnLibrary_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Library" />
+            <Button
+                android:id="@+id/btnVehicle_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/btnRent_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rent" />
-            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnLearning_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Learning" />
+            <Button
+                android:id="@+id/btnVisit_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit" />
 
-                <Button
-                    android:id="@+id/btnHarvest_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Harvest" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnMeeting_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting" />
+        </TableRow>
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnMeal_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Meal" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/btnSponsor_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sponsor" />
-            </TableRow>
+            <Button
+                android:id="@+id/btnInventory_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inventory" />
 
-            <TableRow>
-                <Button
-                    android:id="@+id/btnFilm_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Film" />
+            <Button
+                android:id="@+id/btnTraining_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Training" />
+        </TableRow>
 
-                <Button
-                    android:id="@+id/btnRecipe_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Recipe" />
-            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        </TableLayout>
-    </ScrollView>
+            <Button
+                android:id="@+id/btnVolunteer_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volunteer" />
 
+            <Button
+                android:id="@+id/btnEntertainment_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entertaiment" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnLibrary_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Library" />
+
+            <Button
+                android:id="@+id/btnRent_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent" />
+        </TableRow>
+
+         <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnLearning_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learning" />
+
+             <Button
+                 android:id="@+id/btnHarvest_main"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Harvest" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnMeal_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal" />
+
+            <Button
+                android:id="@+id/btnSponsor_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sponsor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnFilm_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Film" />
+
+            <Button
+                android:id="@+id/btnRecipe_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
