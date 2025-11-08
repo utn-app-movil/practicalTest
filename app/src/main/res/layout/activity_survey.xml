@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- Logo IMAS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAS"
+            android:textSize="48sp"
+            android:textColor="#1B5E20"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encuesta de Registro para Beneficios"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ID (Cédula) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Cédula"
+                android:textSize="16sp"
+                android:textColor="#D32F2F"
+                android:layout_marginEnd="8dp" />
+            <EditText
+                android:id="@+id/etId"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_rounded"
+                android:padding="14dp"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:hint="Ej: 101230456" />
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                android:contentDescription="Buscar" />
+        </LinearLayout>
+
+        <!-- Nombre completo -->
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Nombre completo"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fecha de Nacimiento -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Fecha Nac."
+                android:textSize="16sp"
+                android:textColor="#D32F2F"
+                android:layout_marginEnd="8dp" />
+            <EditText
+                android:id="@+id/etFechaNacimiento"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_rounded"
+                android:padding="14dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="15sp"
+                android:hint="dd/mm/aaaa" />
+            <ImageButton
+                android:id="@+id/btnCalendar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                android:contentDescription="Calendario" />
+        </LinearLayout>
+
+        <!-- Estado Civil -->
+        <Spinner
+            android:id="@+id/spinnerEstadoCivil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ingresos mensuales -->
+        <EditText
+            android:id="@+id/etIngresos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Ingresos mensuales (₡)"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ubicación -->
+        <EditText
+            android:id="@+id/etProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Provincia"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etCanton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Cantón"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etDistrito"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Distrito"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Dirección exacta -->
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Dirección exacta (señas)"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="* Teléfono"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:padding="14dp"
+            android:hint="Correo (opcional)"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- BOTÓN ENVIAR ENCUESTA -->
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="ENVIAR ENCUESTA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_green_rounded"
+            android:layout_marginTop="10dp"
+            android:elevation="12dp" />
+
+    </LinearLayout>
+</ScrollView>
