@@ -1,6 +1,7 @@
 package cr.ac.utn.practicaltest
 
 import Util.Util
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -26,9 +27,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnEvent = findViewById<Button>(R.id.btnEvent_main)
-        btnEvent.setOnClickListener(View.OnClickListener{ view->
-
-        })
+        btnEvent.setOnClickListener {
+            val intent = Intent(this, EventActivity::class.java)
+            startActivity(intent)
+        }
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener(View.OnClickListener{ view->
@@ -50,10 +52,10 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        val btnSurvey = findViewById<Button>(R.id.btnSurvery_main)
-        btnSurvey.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
+        btnSurvey.setOnClickListener {
+            Util.openActivity(this, SurveyActivity::class.java)
+        }
 
         val btnReceipt = findViewById<Button>(R.id.btnReceipt_main)
         btnReceipt.setOnClickListener(View.OnClickListener{ view->
