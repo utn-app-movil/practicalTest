@@ -11,6 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticalTest">
+
+
+        <activity android:name=".ServiceActivity" />
+
+        <!-- No tocar esta parte -->
+        <activity
+            android:name=".Item_EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false"
+            android:label="Gestión de Eventos" />
+        <activity
+            android:name=".InventoryActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,8 +36,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ReceiptActivity"
-            android:exported="true"/>
+            android:name=".FilmActivity"
+            android:exported="false" />
+
+        <!-- Incidents screens -->
+        <activity android:name="Controller.Incident.IncidentActivity" android:exported="false" />
+        <activity android:name="Controller.Incident.ElecServActivity" android:exported="false" />
+        <activity android:name="Controller.Incident.WaterServActivity" android:exported="false" />
+        <activity android:name="Controller.Incident.SecurityServActivity" android:exported="false" />
+
+        <!--Meeting CRUD screen -->
+        <activity android:name=".MeetingActivity" />
+
     </application>
 
 </manifest>

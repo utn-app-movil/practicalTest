@@ -11,13 +11,12 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.Date
 import java.util.Locale
+import Entity.Service
 
 class Util {
-    companion object{
-        fun openActivity(context: Context
-                         , objClass: Class<*>){
-            val intent= Intent(context
-                    , objClass)
+    companion object {
+        fun openActivity(context: Context, objClass: Class<*>) {
+            val intent = Intent(context, objClass)
             context.startActivity(intent)
         }
 
@@ -51,20 +50,25 @@ class Util {
             }
         }
 
-        fun showDialogCondition(context: Context, questionText: String, callback: () ->  Unit){
+        fun showDialogCondition(context: Context, questionText: String, callback: () -> Unit) {
             val dialogBuilder = AlertDialog.Builder(context)
             dialogBuilder.setMessage(questionText)
                 .setCancelable(false)
-                .setPositiveButton(context.getString(R.string.TextYes), DialogInterface.OnClickListener{
-                        dialog, id -> callback()
-                })
-                .setNegativeButton(context.getString(R.string.TextNo), DialogInterface.OnClickListener {
-                        dialog, id -> dialog.cancel()
-                })
+                .setPositiveButton(context.getString(R.string.TextYes),
+                    DialogInterface.OnClickListener { _, _ -> callback() })
+                .setNegativeButton(context.getString(R.string.TextNo),
+                    DialogInterface.OnClickListener { dialog, _ -> dialog.cancel() })
 
             val alert = dialogBuilder.create()
             alert.setTitle(context.getString(R.string.TextTitleDialogQuestion))
             alert.show()
         }
+
+
+        val services = mutableListOf(
+            Service(1, "Internet", "Servicio de conexión a internet de alta velocidad", 15000.0),
+            Service(2, "Limpieza", "Servicio de limpieza básica del hogar", 10000.0),
+            Service(3, "Electricidad", "Mantenimiento e instalación eléctrica", 25000.0)
+        )
     }
 }
