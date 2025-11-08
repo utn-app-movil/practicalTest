@@ -51,4 +51,35 @@
     <string name="btnLoadUser">Manage user</string>
 
     <!-- FIN USER -->
+
+    <!-- ===== Meals (EN) ===== -->
+    <string name="title_activity_meal_activity.kt">Meal Activity</string>
+    <string name="meals_title">Meals to Share</string>
+    <string name="meals_list_title">Saved meals</string>
+
+    <!-- Form placeholders -->
+    <string name="meal_name_hint">Meal name (e.g., Arroz con pollo)</string>
+    <string name="meal_quantity_hint">Quantity (portions)</string>
+    <string name="meal_delivery_date_hint">Delivery date (dd/MM/yyyy)</string>
+    <string name="meal_notes_hint">Notes (optional)</string>
+
+    <!-- List/validation texts -->
+    <string name="portions">portions</string>
+    <string name="delivery">Delivery</string>
+    <string name="msg_fill_fields">Please complete the required fields</string>
+
+    <!-- Buttons -->
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="clear">Clear</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+
+    <!-- CRUD messages -->
+    <string name="meal_added">Meal added</string>
+    <string name="meal_updated">Meal updated</string>
+    <string name="meal_deleted">Meal deleted</string>
+    <string name="meal_delete_confirm">Delete “%1$s”?</string>
+
 </resources>
