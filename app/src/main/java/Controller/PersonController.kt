@@ -2,6 +2,7 @@ package Controller
 
 import Data.IDataManager
 import Data.MemoryDataManager
+import Entity.Identifier
 import Entity.Person
 import android.content.Context
 import cr.ac.utn.practicaltest.R
@@ -32,9 +33,10 @@ class PersonController {
         }
     }
 
-    fun getById(id: String): Person?{
+    fun getById(id: String): Identifier?{
         try {
-            return dataManager.getById(id)
+            val person = dataManager.getById(id)
+            return person
         }catch (e: Exception){
             throw Exception(context
                 .getString(R.string.ErrorMsgGetById))
