@@ -1,9 +1,13 @@
 package Data
 
 import Entity.Person
+import Entity.Volunteer
 
-object MemoryDataManager: IDataManager {
+object MemoryDataManager: IDataManager, IDataManagerVolunteer{
     private  var personList = mutableListOf<Person>()
+    //
+    private  var volunteerList = mutableListOf<Volunteer>()
+
     override fun add(person: Person) {
         personList.add(person)
     }
@@ -29,6 +33,25 @@ object MemoryDataManager: IDataManager {
         val result = personList.
         filter { it.FullName() == fullName.trim()}
         return if(result.any()) result[0] else null
+    }
+
+    //HERE STARTS DE VOLUNTEER CONTROLLER OVERRIDES
+    override fun addV(volunteer: Volunteer){
+        volunteerList.add(volunteer)
+    }
+
+    override fun updateV(volunteer: Volunteer){
+        remove(volunteer.ID)
+        addV(volunteer)
+    }
+
+    override fun getVById(id: String): Volunteer?{
+        val result = volunteerList.filter { it.ID.trim() == id.trim()}
+        return if(result.any()) result[0] else null
+    }
+
+    override fun removeV(id: String){
+        volunteerList.removeIf { it.ID.trim() == id.trim() }
     }
 
 }
