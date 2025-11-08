@@ -20,8 +20,16 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="MsgUpdateSuccess">The record was updated</string>
+    <string name="txtInscriptionId">Registration Number*</string>
+    <string name="txtFullName">Full Name*</string>
+    <string name="txtEmail">Email address</string>
+    <string name="txtCourse">Course Name*</string>
+    <string name="txtSchedule">Schedule*</string>
+    <string name="txtTraining">Trainer</string>
 </resources>

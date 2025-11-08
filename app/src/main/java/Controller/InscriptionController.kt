@@ -54,5 +54,4 @@ class InscriptionController {
                 .getString(R.string.ErrorMsgRemove))
         }
     }
-
 }
