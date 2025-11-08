@@ -1,5 +1,4 @@
 package cr.ac.utn.practicaltest
-
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -18,7 +17,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val btnUserActivity = findViewById<Button>(R.id.btnManage_user)
         btnUserActivity.setOnClickListener (View.OnClickListener { view ->
             Util.Util.openActivity(this, UserActivity::class.java)
