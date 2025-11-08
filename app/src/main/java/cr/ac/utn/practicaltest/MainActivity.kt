@@ -1,6 +1,6 @@
 package cr.ac.utn.practicaltest
 
-import Controller.Incident.IncidentActivity
+import Util.Util
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -27,9 +27,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnEvent = findViewById<Button>(R.id.btnEvent_main)
-        btnEvent.setOnClickListener(View.OnClickListener{ view->
-
-        })
+        btnEvent.setOnClickListener {
+            val intent = Intent(this, EventActivity::class.java)
+            startActivity(intent)
+        }
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener(View.OnClickListener{ view->
@@ -72,7 +73,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnIncident = findViewById<Button>(R.id.btnIncident_main)
-        btnIncident.setOnClickListener { startActivity(Intent(this, IncidentActivity::class.java)) }
+        btnIncident.setOnClickListener(View.OnClickListener{ view->
+            
+        })
 
         val btnVehicle = findViewById<Button>(R.id.btnVehicle_main)
         btnVehicle.setOnClickListener(View.OnClickListener{ view->
@@ -141,7 +144,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnFilm = findViewById<Button>(R.id.btnFilm_main)
         btnFilm.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, FilmActivity::class.java)
         })
 
         val btnRecipe = findViewById<Button>(R.id.btnRecipe_main)
