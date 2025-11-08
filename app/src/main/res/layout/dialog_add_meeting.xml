@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/inputDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Día (e.g. 2025-11-08)"
+        android:inputType="date"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hora (e.g. 14:30 p.m)"
+        android:inputType="time"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputParticipants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Participantes"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+</LinearLayout>
