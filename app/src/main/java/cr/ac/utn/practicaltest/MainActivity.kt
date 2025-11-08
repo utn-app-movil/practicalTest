@@ -1,5 +1,7 @@
 package cr.ac.utn.practicaltest
 
+import Util.Util
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -27,9 +29,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnEvent = findViewById<Button>(R.id.btnEvent_main)
-        btnEvent.setOnClickListener(View.OnClickListener{ view->
-
-        })
+        btnEvent.setOnClickListener {
+            val intent = Intent(this, EventActivity::class.java)
+            startActivity(intent)
+        }
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener {
@@ -142,7 +145,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnFilm = findViewById<Button>(R.id.btnFilm_main)
         btnFilm.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, FilmActivity::class.java)
         })
 
         val btnRecipe = findViewById<Button>(R.id.btnRecipe_main)
