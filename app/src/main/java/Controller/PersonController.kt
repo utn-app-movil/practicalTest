@@ -43,8 +43,7 @@ class PersonController {
 
     fun getByFullName(fullname: String): Person?{
         try {
-            return dataManager.
-                getByFullName(fullname)
+            return dataManager.getByFullName(fullname) as Person?
         }catch (e: Exception){
             throw Exception(context
                 .getString(R.string.ErrorMsgGetById))
