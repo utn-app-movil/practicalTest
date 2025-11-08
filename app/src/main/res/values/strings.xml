@@ -19,6 +19,14 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+    <string name="name_supplier">Nombre</string>
+    <string name="phone_supplier">Teléfono</string>
+    <string name="email_supplier">Correo Elec</string>
+    <string name="contact_name_supplier">Nombre del contacto</string>
+    <string name="address_supplier">Dirección</string>
+    <string name="country_supplier">País</string>
+    <string name="city_supplier">Ciudad</string>
+    <string name="post_code_supplier">Código postal</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 

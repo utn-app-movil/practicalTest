@@ -20,6 +20,14 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="name_supplier">Name</string>
+    <string name="phone_supplier">Phone</string>
+    <string name="email_supplier">E-mail</string>
+    <string name="contact_name_supplier">Contact Name</string>
+    <string name="address_supplier">Address</string>
+    <string name="country_supplier">Country</string>
+    <string name="city_supplier">City</string>
+    <string name="post_code_supplier">Postal code</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
