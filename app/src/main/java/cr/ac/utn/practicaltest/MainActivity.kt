@@ -1,5 +1,6 @@
 package cr.ac.utn.practicaltest
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -120,10 +121,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnLearning = findViewById<Button>(R.id.btnLearning_main)
-        btnLearning.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnLearning.setOnClickListener {
+            startActivity(Intent(this, LearningActivity::class.java))
 
+        }
         val btnHarvest = findViewById<Button>(R.id.btnHarvest_main)
         btnHarvest.setOnClickListener(View.OnClickListener{ view->
             

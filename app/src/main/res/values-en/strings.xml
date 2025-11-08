@@ -20,6 +20,15 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="btnClasses_Learning">Available Classes</string>
+    <string name="btnSchedule_Learning">Schedule</string>
+    <string name="btnProfessors_Learning">Professor</string>
+    <string name="btnBack_Class">Back</string>
+    <string name="btnBack_Professor">Back</string>
+    <string name="btnBack_Schedule">Back</string>
+    <string name="btnSelect_class">Select</string>
+    <string name="btnSelect_class2">Select</string>
+    <string name="btnSelect_class3">Select</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
