@@ -113,7 +113,7 @@ class TrainingActivity : AppCompatActivity() {
                 val existing = inscriptionController.getByIdInscription(id)
                 val ins = Inscription()
                 ins.InscriptionId = id
-                ins.PersonId = id
+                ins.PersonId = TextName.text.toString()
                 ins.PersonEmail = TextEmail.text.toString()
                 ins.CourseName = TextCourse.text.toString()
                 ins.TrainingName = TextTraining.text.toString()
