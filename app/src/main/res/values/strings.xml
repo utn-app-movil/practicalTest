@@ -10,7 +10,7 @@
     <string name="MsgDeleteSuccess">La información se eliminó con éxito.</string>
     <string name="TextYes">Si</string>
     <string name="TextNo">No</string>
-    <string name="TextTitleDialogQuestion">Pregunta...</string>
+    <string name="TextTitleDialogQuestion">Pregunta…</string>
     <string name="TextSaveActionQuestion">Desea guardar la información?</string>
     <string name="TextDeleteActionQuestion">Desea eliminar la información?</string>
     <string name="ErrorMsgAdd">Error al agregar la información.</string>
@@ -23,6 +23,52 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <!-- Incidencias -->
+    <string name="ElecServ">Incidencia Eléctrica</string>
+    <string name="WatServ">Incidencia de Agua</string>
+    <string name="SecServ">Incidencia de Seguridad</string>
+    <string name="incident_title">Gestión de Incidencias</string>
+    <string name="nameofReport">Nombre del Reportante</string>
+    <string name="located">Ubicación (ej. Calle, Nº, Piso)</string>
+    <string name="descriptionIssue">Descripción del problema</string>
+    <string name="savebtn">Guardar</string>
+    <string name="severity_label">Severidad</string>
+    <string name="date_label">Fecha</string>
+    <string name="report_saved">Reporte guardado</string>
+    <string name="severity_low">Baja</string>
+    <string name="severity_medium">Media</string>
+    <string name="severity_high">Alta</string>
+    <string name="error_required_fields">Complete ubicación y descripción</string>
+    <string name="saved_and_close">Reporte guardado y cerrado</string>
+    <string name="severity_prompt">Seleccione severidad</string>
+
+    <!-- Otros (parte del merge) -->
+    <string name="estado_civil_prompt" translatable="false">* Estado civil</string>
+    <string-array name="estado_civil">
+        <item>Soltero/a</item>
+        <item>Casado/a</item>
+        <item>Unión libre</item>
+        <item>Divorciado/a</item>
+        <item>Viudo/a</item>
+    </string-array>
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Nombre de recurso</string>
+    <string name="TextCategory">Categoria</string>
+    <string name="TextQuantity">Cantidad</string>
+    <string name="TextProvider">Proveedor</string>
+    <string name="btnSaveInventory">Guardar inventario</string>
+
+    <string name="TestID">Cedula</string>
+    <string name="TextName">Nombre</string>
+    <string name="Textflastname">Primer Apellido</string>
+    <string name="Textslastname">Segundo apellido</string>
+    <string name="Textphone">Telefono</string>
+    <string name="Textemail">Correo</string>
+    <string name="Textstate">Estado</string>
+    <string name="Textdistrict">Distrito</string>
+    <string name="Textaddress">Direccion</string>
+    <string name="Textsave">Guardar</string>
+
 
 
 

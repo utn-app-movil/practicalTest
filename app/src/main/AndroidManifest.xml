@@ -17,6 +17,16 @@
 
         <!-- No tocar esta parte -->
         <activity
+            android:name=".Item_EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false"
+            android:label="Gestión de Eventos" />
+        <activity
+            android:name=".InventoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -24,7 +34,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FilmActivity"
+            android:exported="false" />
 
+        <!-- Incidents screens -->
+        <activity android:name="Controller.Incident.IncidentActivity" android:exported="false" />
+        <activity android:name="Controller.Incident.ElecServActivity" android:exported="false" />
+        <activity android:name="Controller.Incident.WaterServActivity" android:exported="false" />
+        <activity android:name="Controller.Incident.SecurityServActivity" android:exported="false" />
     </application>
 
 </manifest>
