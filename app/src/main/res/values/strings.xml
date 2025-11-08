@@ -23,5 +23,11 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="TxtIdReceipt">ID Recibo</string>
+    <string name="TxtReceipt_number">Numero de recibo</string>
+    <string name="TxtReceiptClient">Nombre Cliente</string>
+    <string name="TxtReceiptAmount">Monto</string>
+    <string name="TxtDate">Fecha</string>
+    <string name="btn_saveReceipt">Guardar Recibo</string>
 
 </resources>

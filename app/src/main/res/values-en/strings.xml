@@ -20,6 +20,12 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="TxtIdReceipt">Receip ID</string>
+    <string name="TxtReceipt_number">Receip Number</string>
+    <string name="TxtReceiptClient">Client Name</string>
+    <string name="TxtReceiptAmount">Amount</string>
+    <string name="TxtDate">Date</string>
+    <string name="btn_saveReceipt">Save Receipt</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
