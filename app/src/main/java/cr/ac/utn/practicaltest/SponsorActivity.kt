@@ -82,6 +82,25 @@ class SponsorActivity : AppCompatActivity() {
             }
         })
 
+        btnEdit.setOnClickListener(View.OnClickListener{view ->
+            val id = txtId.text.toString().trim()
+            if (id.isNotEmpty()) {
+                isEditMode = true
+                Util.showDialogCondition(this,getString(R.string.TextUpdateActionQuestion_Esteban),::saveSponsor)
+            } else {
+                Toast.makeText(this, getString(R.string.MsgIdRequired_Esteban), Toast.LENGTH_SHORT).show()
+                txtId.requestFocus()
+            }
+        })
+        btnDelete.setOnClickListener(View.OnClickListener{view ->
+            val id = txtId.text.toString().trim()
+            if (id.isNotEmpty()) {
+                Util.showDialogCondition(this,getString(R.string.TextDeleteActionQuestion),::deleteSponsor)
+            } else {
+                Toast.makeText(this, getString(R.string.MsgIdRequired_Esteban), Toast.LENGTH_SHORT).show()
+                txtId.requestFocus()
+            }
+        })
         btnCancel.setOnClickListener(View.OnClickListener{view ->
             cleanScreenSponsor()
         })
@@ -109,7 +128,7 @@ class SponsorActivity : AppCompatActivity() {
                 Toast.makeText(this, getString(R.string.MsgInvalidData_Esteban), Toast.LENGTH_LONG).show()
                 return
             }
-            if (sponsorController.getUserById(txtId.text.toString().trim()) != null) {
+            if (sponsorController.getUserById(txtId.text.toString().trim()) != null && !isEditMode) {
                 Toast.makeText(this, getString(R.string.MsgDuplicated_Esteban), Toast.LENGTH_LONG).show()
                 return
             }
@@ -131,8 +150,17 @@ class SponsorActivity : AppCompatActivity() {
             sponsor.detail = txtSupportDetail.text.toString().trim()
             if (!isEditMode){
                 sponsorController.addSponsor(sponsor)
-            }else
+                Toast.makeText(
+                    this, getString(R.string.MsgSaveSuccess),
+                    Toast.LENGTH_LONG
+                ).show()
+            }else{
                 sponsorController.updateSponsor(sponsor)
+                Toast.makeText(
+                    this, getString(R.string.MsgSaveSuccess),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
             cleanScreenSponsor()
             txtId.isEnabled = true
         }catch (e: Exception){
@@ -159,6 +187,7 @@ class SponsorActivity : AppCompatActivity() {
             val sponsor = sponsorController.getUserById(id)
             if (sponsor != null){
                 isEditMode = true
+                txtId.isEnabled = false
                 txtId.setText(sponsor.id)
                 txtNameSponsor.setText(sponsor.nameSponsor)
                 when (sponsor.type) {

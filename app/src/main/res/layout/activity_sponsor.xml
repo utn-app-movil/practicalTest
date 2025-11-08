@@ -195,11 +195,11 @@
                 android:id="@+id/txtContactEmail_sponsor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:hint="@string/sponsor_contact_email_hint"
                 android:inputType="textEmailAddress"
                 android:padding="14dp"
-                android:textSize="16sp"
-                android:layout_marginBottom="10dp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/txtContactPhone_sponsor"
