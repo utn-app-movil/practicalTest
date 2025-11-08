@@ -13,7 +13,7 @@
     <string name="TextDelete_menu">Delete</string>
     <string name="TextCancel_mnu">Cancel</string>
     <string name="MsgDuplicateDate">The information is duplicated.</string>
-    <string name="MsgSaveSuccess">The information is saved successfully,</string>
+    <string name="MsgSaveSuccess">Saved Sucessfully</string>
     <string name="MsgDeleteSuccess">The information was deleted successfully.</string>
     <string name="TextYes">Yes</string>
     <string name="TextNo">No</string>
