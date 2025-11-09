@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener(View.OnClickListener{ view->
-
+            Util.openActivity(this, NewsActivity::class.java)
         })
 
         val btnTask = findViewById<Button>(R.id.btnTask_main)
