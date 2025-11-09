@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/border_ingredient"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Fila superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/inputIngredientName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Nombre"
+                android:ems="6" />
+
+            <EditText
+                android:id="@+id/inputIngredientQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Cant."
+                android:ems="3"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/inputIngredientUnit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Unidad"
+                android:ems="3" />
+        </LinearLayout>
+
+        <!-- Fila inferior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/inputIngredientState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Estado"
+                android:ems="5" />
+
+            <CheckBox
+                android:id="@+id/checkOptional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opc."
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <!-- Notas -->
+        <EditText
+            android:id="@+id/inputIngredientNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Notas"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnRemoveIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp" />
+
+</LinearLayout>
