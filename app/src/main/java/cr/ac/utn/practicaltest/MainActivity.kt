@@ -128,10 +128,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnLearning = findViewById<Button>(R.id.btnLearning_main)
-        btnLearning.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnLearning.setOnClickListener {
+            startActivity(Intent(this, LearningActivity::class.java))
 
+        }
         val btnHarvest = findViewById<Button>(R.id.btnHarvest_main)
         btnHarvest.setOnClickListener(View.OnClickListener{ view->
             
