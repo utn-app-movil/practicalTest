@@ -19,6 +19,20 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+    <string name="VolunteerTittle">Registro de voluntarios</string>
+    <string name="txtTypeVolunteer">Tipo de voluntariado</string>
+    <string name="txtDateVolunteer">Fecha del voluntariado</string>
+    <string name="txtTimeVolunteer">Hora del voluntariado</string>
+    <string name="txtVolunteerID">ID del voluntariado</string>
+    <string name="txtPersonID">Identificación</string>
+    <string name="txtPersonName">Nombre</string>
+    <string name="txtFLastName">Primer apellido</string>
+    <string name="txtSLastName">Segundo apellido</string>
+    <string name="txtPersonEmail">Correo</string>
+    <string name="txtPersonPhone">Teléfono</string>
+    <string name="txtPersonState">Estado</string>
+    <string name="txtPersonDistrict">Distrito</string>
+    <string name="txtPersonAddress">Dirección</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
