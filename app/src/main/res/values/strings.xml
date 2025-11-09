@@ -37,6 +37,8 @@
     <string name="TxtUnitPrice">Precio Unitario</string>
     <string name="TxtTotalPrice">Precio Total</string>
 
+
+
     <!-- Texto para Mensajes -->
     <string name="MsgIncompleteData">Datos Incompletos</string>
     <string name="MsgInvalidQuantity">Cantidad Invalida</string>
