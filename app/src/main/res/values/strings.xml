@@ -81,4 +81,24 @@
     <string name="add_meeting_dialog_title">Agregar reunión</string>
     <string name="edit_meeting_dialog_title">Editar reunión</string>
 
+    <!-- BookingActivity layout -->
+    <string name="booking_title">Reserva</string>
+    <string name="booking_id_label">ID de la reserva</string>
+    <string name="space_name_label">Nombre del espacio</string>
+    <string name="space_type_label">Tipo de espacio</string>
+    <string name="space_type_hint">Cancha, salón, etc.</string>
+    <string name="start_datetime_label">Inicio de la reserva</string>
+    <string name="select_start_datetime">Seleccionar fecha y hora de inicio</string>
+    <string name="end_datetime_label">Fin de la reserva</string>
+    <string name="select_end_datetime">Seleccionar fecha y hora de fin</string>
+    <string name="status_label">Estado</string>
+    <string name="person_label">Persona</string>
+    <string name="person_id_hint">ID de la persona</string>
+    <string name="person_name_label">Nombre de la persona</string>
+    <string name="save_booking_button">Guardar reserva</string>
+
+    <!-- BookingActivity -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="MsgEndDateBeforeStart">La fecha/hora de fin no puede ser menor que la de inicio</string>
+
 </resources>

@@ -2,7 +2,6 @@ package cr.ac.utn.practicaltest
 
 import Util.Util
 import Controller.Incident.IncidentActivity
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -52,7 +51,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnBooking = findViewById<Button>(R.id.btnBooking_main)
         btnBooking.setOnClickListener(View.OnClickListener{ view->
-
+            Util.openActivity(this,
+                BookingActivity::class.java)
         })
 
         val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
