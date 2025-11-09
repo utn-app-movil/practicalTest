@@ -10,6 +10,7 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import Controller.VisitActivity
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
@@ -87,9 +88,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnVisit = findViewById<Button>(R.id.btnVisit_main)
-        btnVisit.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnVisit.setOnClickListener {
+            Util.openActivity(this, VisitActivity::class.java)
+        }
 
         val btnMeeting = findViewById<Button>(R.id.btnMeeting_main)
         btnMeeting.setOnClickListener(View.OnClickListener { view ->
