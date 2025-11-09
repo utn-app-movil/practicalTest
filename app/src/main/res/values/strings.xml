@@ -30,6 +30,9 @@
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
+    <!-- TextConflictActivity -->
+    <string name="TextFixConflicts1">TextFixConflicts1</string>
+    <string name="TextFixConflicts2">TextFixConflicts2</string>
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
     <!-- Incidencias -->
@@ -79,7 +82,6 @@
     <string name="Textsave">Guardar</string>
 
 
-
     <string name="title_meeting_activity">Reuniones</string>
     <string name="add_meeting">Agregar una reunión</string>
 
@@ -108,5 +110,6 @@
     <!-- BookingActivity -->
     <string name="MsgIncompleteData">Datos incompletos</string>
     <string name="MsgEndDateBeforeStart">La fecha/hora de fin no puede ser menor que la de inicio</string>
+
 
 </resources>

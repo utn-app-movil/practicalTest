@@ -48,7 +48,12 @@
     <string name="country_supplier">Country</string>
     <string name="city_supplier">City</string>
     <string name="post_code_supplier">Postal code</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
+
+    <!-- TextConflictActivity -->
+    <string name="TextFixConflicts1">TextFixConflicts1</string>
+    <string name="TextFixConflicts2">TextFixConflicts2</string>
 
     <string name="ElecServ">Electrical Incident</string>
     <string name="WatServ">Water Incident</string>
