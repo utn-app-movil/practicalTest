@@ -42,6 +42,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Booking screen -->
+        <activity android:name=".BookingActivity" android:exported="false" />
+
         <activity
             android:name=".FilmActivity"
             android:exported="false" />
@@ -54,7 +58,6 @@
 
         <!--Meeting CRUD screen -->
         <activity android:name=".MeetingActivity" />
-
     </application>
 
 </manifest>
