@@ -11,6 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticalTest">
+        <activity android:name=".NewsListActivity" />
+        <activity android:name=".NewsFormActivity" />
+        <activity
+            android:name="cr.ac.utn.practicaltest.meals.MealActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PracticalTest">
+       
+        </activity>
+
+        <activity
+            android:name=".UserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".EventoListaActivity"
             android:exported="true">
