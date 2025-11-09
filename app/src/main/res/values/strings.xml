@@ -21,6 +21,7 @@
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
     <string name="MsgDuplicateData">La info está duplicada</string>
     <string name="MsgMissingData">Hace falta info</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
@@ -73,5 +74,13 @@
 
 
 
+    <string name="title_meeting_activity">Reuniones</string>
+    <string name="add_meeting">Agregar una reunión</string>
+
+    <!-- STRINGS OF dialog_add_meeting -->
+    <string name="edit">Editar</string>
+    <string name="delete">Borrar</string>
+    <string name="add_meeting_dialog_title">Agregar reunión</string>
+    <string name="edit_meeting_dialog_title">Editar reunión</string>
 
 </resources>
