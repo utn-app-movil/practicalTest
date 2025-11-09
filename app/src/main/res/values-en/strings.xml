@@ -20,6 +20,7 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+           
     <string name="learning_title">Learning Activity</string>
     <string name="learning_add_title">New class</string>
     <string name="learning_edit_title">Edit class</string>
@@ -45,6 +46,13 @@
     <string name="TextContent">Content:</string>
     <string name="TextNewsTitle">News Title:</string>
     <string name="TextDate2">Date: 20251106</string>
+    <string name="MsgUpdateSuccess">The record was updated</string>
+    <string name="txtInscriptionId">Registration Number*</string>
+    <string name="txtFullName">Full Name*</string>
+    <string name="txtEmail">Email address</string>
+    <string name="txtCourse">Course Name*</string>
+    <string name="txtSchedule">Schedule*</string>
+    <string name="txtTraining">Trainer</string>
 
     <!-- USER -->
     <string name="MsgIncompleteData">Incomplete data</string>
