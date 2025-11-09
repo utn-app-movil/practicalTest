@@ -19,8 +19,14 @@
             android:exported="false" />
         <activity
             android:name=".EventActivity"
-            android:exported="false"
-            android:label="Gestión de Eventos" />
+            android:exported="true"
+            android:label="Gestión de Eventos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".InventoryActivity"
             android:exported="false" />
@@ -41,11 +47,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity> <!-- Booking screen -->
         <activity
             android:name=".BookingActivity"

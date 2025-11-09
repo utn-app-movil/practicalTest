@@ -30,10 +30,6 @@
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
-    <!-- TextConflictActivity -->
-    <string name="TextFixConflicts1">TextFixConflicts1</string>
-    <string name="TextFixConflicts2">TextFixConflicts2</string>
-
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
     <!-- Incidencias -->
     <string name="ElecServ">Incidencia Eléctrica</string>
@@ -45,6 +41,11 @@
     <string name="descriptionIssue">Descripción del problema</string>
     <string name="savebtn">Guardar</string>
     <string name="severity_label">Severidad</string>
+
+    <!-- TextConflictActivity -->
+    <string name="TextFixConflicts1">TextFixConflicts1</string>
+    <string name="TextFixConflicts2">TextFixConflicts2</string>
+
     <string name="date_label">Fecha</string>
     <string name="report_saved">Reporte guardado</string>
     <string name="severity_low">Baja</string>

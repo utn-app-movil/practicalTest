@@ -41,6 +41,11 @@
     <string name="add_meeting_dialog_title">Add meeting</string>
     <string name="edit_meeting_dialog_title">Edit meeting</string>
     <string name="name_supplier">Name</string>
+
+    <!-- TextConflictActivity -->
+    <string name="TextFixConflicts1">TextFixConflicts1</string>
+    <string name="TextFixConflicts2">TextFixConflicts2</string>
+
     <string name="phone_supplier">Phone</string>
     <string name="email_supplier">E-mail</string>
     <string name="contact_name_supplier">Contact Name</string>
@@ -50,10 +55,6 @@
     <string name="post_code_supplier">Postal code</string>
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
-
-    <!-- TextConflictActivity -->
-    <string name="TextFixConflicts1">TextFixConflicts1</string>
-    <string name="TextFixConflicts2">TextFixConflicts2</string>
 
     <string name="ElecServ">Electrical Incident</string>
     <string name="WatServ">Water Incident</string>
