@@ -19,10 +19,18 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="MsgUpdateSuccess">Registro actualizado satisfactoriamente</string>
+    <string name="txtInscriptionId">N°Inscripción*</string>
+    <string name="txtFullName">Nombre completo*</string>
+    <string name="txtEmail">Correo eléctronico</string>
+    <string name="txtCourse">Nombre del curso*</string>
+    <string name="txtSchedule">Horario*</string>
+    <string name="txtTraining">Entrenador</string>
     <!-- ===== Learning Activity (ES) ===== -->
     <string name="learning_title">Gestión de Actividades Deportivas</string>
     <string name="learning_field_title">Nombre de la actividad</string>
@@ -41,11 +49,6 @@
     <string name="btnUserList">Lista usuarios</string>
     <string name="btnLoadUser">Gestionar usuarios</string>
     <string name="title_activity_meal_activity.kt">MealActivity.kt</string>
-
-
-
-
-
 
     <!-- ===== Meals (ES) ===== -->
     <string name="meals_title">Alimentos para Compartir</string>
