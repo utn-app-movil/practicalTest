@@ -24,6 +24,13 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="btnSeeNews">Ver Noticias.</string>
+    <string name="TextNewsManagement">Gestión de Noticias.</string>
+    <string name="TextTitle">Titulo:</string>
+    <string name="TextDate">Fecha (20251106):</string>
+    <string name="TextContent">Contenido:</string>
+    <string name="TextNewsTitle">Titulo de la Noticia:</string>
+    <string name="TextDate2">Fecha: 20251106</string>
     <string name="MsgUpdateSuccess">Registro actualizado satisfactoriamente</string>
     <string name="txtInscriptionId">N°Inscripción*</string>
     <string name="txtFullName">Nombre completo*</string>

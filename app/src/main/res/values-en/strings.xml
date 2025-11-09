@@ -39,6 +39,13 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="btnSeeNews"> See News.</string>
+    <string name="TextNewsManagement">News Management.</string>
+    <string name="TextTitle">Title:</string>
+    <string name="TextDate">Date (20251106):</string>
+    <string name="TextContent">Content:</string>
+    <string name="TextNewsTitle">News Title:</string>
+    <string name="TextDate2">Date: 20251106</string>
     <string name="MsgUpdateSuccess">The record was updated</string>
     <string name="txtInscriptionId">Registration Number*</string>
     <string name="txtFullName">Full Name*</string>
