@@ -69,4 +69,5 @@
     <string name="TextQuantity">Quantity</string>
     <string name="TextProvider">Provider</string>
     <string name="btnSaveInventory">Save inventory</string>
+    <string name="TextConflict">TextConflict</string>
 </resources>

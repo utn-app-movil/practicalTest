@@ -84,5 +84,6 @@
     <string name="delete">Borrar</string>
     <string name="add_meeting_dialog_title">Agregar reunión</string>
     <string name="edit_meeting_dialog_title">Editar reunión</string>
+    <string name="TextConflict">TextConflict</string>
 
 </resources>
