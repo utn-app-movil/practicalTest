@@ -46,7 +46,7 @@ class VolunteerController {
         }
     }
 
-    fun getVolunteerById(id: String): Volunteer?{
+fun getVolunteerById(id: String): Volunteer?{
         try {
             return dataManager.getVById(id)
         }catch (e: Exception){
