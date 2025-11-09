@@ -19,9 +19,73 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="btnSeeNews">Ver Noticias.</string>
+    <string name="TextNewsManagement">Gestión de Noticias.</string>
+    <string name="TextTitle">Titulo:</string>
+    <string name="TextDate">Fecha (20251106):</string>
+    <string name="TextContent">Contenido:</string>
+    <string name="TextNewsTitle">Titulo de la Noticia:</string>
+    <string name="TextDate2">Fecha: 20251106</string>
+    <string name="MsgUpdateSuccess">Registro actualizado satisfactoriamente</string>
+    <string name="txtInscriptionId">N°Inscripción*</string>
+    <string name="txtFullName">Nombre completo*</string>
+    <string name="txtEmail">Correo eléctronico</string>
+    <string name="txtCourse">Nombre del curso*</string>
+    <string name="txtSchedule">Horario*</string>
+    <string name="txtTraining">Entrenador</string>
+    <!-- ===== Learning Activity (ES) ===== -->
+    <string name="learning_title">Gestión de Actividades Deportivas</string>
+    <string name="learning_field_title">Nombre de la actividad</string>
+    <string name="learning_field_schedule">Horario</string>
+    <string name="learning_field_professor">Profesor</string>
+    <string name="learning_empty">No hay actividades registradas. Usa Guardar para agregar.</string>
 
+    <!-- USER -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="TextIDUser">Identificador *</string>
+    <string name="TextNameUser">Nombre *</string>
+    <string name="TextFLastnameUser">Apellido *</string>
+    <string name="TextSLastnameUser">Segundo apellido *</string>
+    <string name="TextPasswordUser">Contraseña *</string>
+    <string name="TextEmailUser">Correo *</string>
+    <string name="btnUserList">Lista usuarios</string>
+    <string name="btnLoadUser">Gestionar usuarios</string>
+    <string name="title_activity_meal_activity.kt">MealActivity.kt</string>
+
+    <!-- ===== Meals (ES) ===== -->
+    <string name="meals_title">Alimentos para Compartir</string>
+    <string name="meals_list_title">Alimentos guardados</string>
+
+    <!-- Placeholders del formulario -->
+    <string name="meal_name_hint">Nombre del alimento (ej.: Arroz con pollo)</string>
+    <string name="meal_quantity_hint">Cantidad (porciones)</string>
+    <string name="meal_delivery_date_hint">Fecha de entrega (dd/MM/yyyy)</string>
+    <string name="meal_notes_hint">Notas (opcional)</string>
+
+    <!-- Textos usados en la lista/validaciones -->
+    <string name="portions">porciones</string>
+    <string name="delivery">Entrega</string>
+    <string name="msg_fill_fields">Por favor complete los campos requeridos</string>
+
+    <!-- Botones (propios de esta pantalla, no chocan con los existentes) -->
+    <string name="add">Agregar</string>
+    <string name="update">Actualizar</string>
+    <string name="clear">Limpiar</string>
+    <string name="delete">Eliminar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="back">Volver</string>
+
+    <!-- Mensajes CRUD -->
+    <string name="meal_added">Alimento agregado</string>
+    <string name="meal_updated">Alimento actualizado</string>
+    <string name="meal_deleted">Alimento eliminado</string>
+    <string name="meal_delete_confirm">¿Eliminar “%1$s”?</string>
+
+
+    <!-- FIN USER -->
 </resources>

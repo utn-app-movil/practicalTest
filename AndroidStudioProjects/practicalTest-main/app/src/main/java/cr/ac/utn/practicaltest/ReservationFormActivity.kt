@@ -177,7 +177,7 @@ class ReservationFormActivity : AppCompatActivity() {
             val reservation = Reservation(
                 id = reservationId ?: UUID.randomUUID().toString(),
                 spaceId = selectedSpace.ID,
-                personId = selectedPerson.Identification,
+                personId = selectedPerson.ID,
                 startDateTime = startDateTime,
                 endDateTime = endDateTime,
                 status = ReservationStatus.PENDIENTE,

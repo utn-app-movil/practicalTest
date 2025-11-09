@@ -2,7 +2,10 @@ package Controller
 
 import Data.IDataManager
 import Data.MemoryDataManager
+<<<<<<< HEAD
 import Entity.Identifier
+=======
+>>>>>>> origin/dev-team2
 import Entity.Person
 import android.content.Context
 import cr.ac.utn.practicaltest.R
@@ -33,10 +36,16 @@ class PersonController {
         }
     }
 
+<<<<<<< HEAD
     fun getById(id: String): Identifier?{
         try {
             val person = dataManager.getById(id)
             return person
+=======
+    fun getById(id: String): Person?{
+        try {
+            return dataManager.getById(id)
+>>>>>>> origin/dev-team2
         }catch (e: Exception){
             throw Exception(context
                 .getString(R.string.ErrorMsgGetById))
