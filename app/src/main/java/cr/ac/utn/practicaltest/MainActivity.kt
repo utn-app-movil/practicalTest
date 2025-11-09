@@ -1,5 +1,9 @@
 package cr.ac.utn.practicaltest
 
+import Util.Util
+import Controller.Incident.IncidentActivity
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -20,14 +24,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnUser = findViewById<Button>(R.id.btnUser_main)
-        btnUser.setOnClickListener(View.OnClickListener{ view->
+        btnUser.setOnClickListener(View.OnClickListener{ view ->
+            Util.openActivity(this, UserActivity::class.java)
 
         })
 
         val btnEvent = findViewById<Button>(R.id.btnEvent_main)
-        btnEvent.setOnClickListener(View.OnClickListener{ view->
-
-        })
+        btnEvent.setOnClickListener {
+            val intent = Intent(this, EventActivity::class.java)
+            startActivity(intent)
+        }
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener(View.OnClickListener{ view->
@@ -49,10 +55,10 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        val btnSurvey = findViewById<Button>(R.id.btnSurvery_main)
-        btnSurvey.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
+        btnSurvey.setOnClickListener {
+            Util.openActivity(this, SurveyActivity::class.java)
+        }
 
         val btnReceipt = findViewById<Button>(R.id.btnReceipt_main)
         btnReceipt.setOnClickListener(View.OnClickListener{ view->
@@ -60,8 +66,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnService = findViewById<Button>(R.id.btnService_main)
-        btnService.setOnClickListener(View.OnClickListener{ view->
-            
+        btnService.setOnClickListener(View.OnClickListener { view ->
+
+            Util.openActivity(this, ServiceActivity::class.java)
         })
 
         val btnSupplier = findViewById<Button>(R.id.btnSupplier_main)
@@ -70,9 +77,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnIncident = findViewById<Button>(R.id.btnIncident_main)
-        btnIncident.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnIncident.setOnClickListener {
+            Util.openActivity(this, IncidentActivity::class.java)
+        }
 
         val btnVehicle = findViewById<Button>(R.id.btnVehicle_main)
         btnVehicle.setOnClickListener(View.OnClickListener{ view->
@@ -85,8 +92,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnMeeting = findViewById<Button>(R.id.btnMeeting_main)
-        btnMeeting.setOnClickListener(View.OnClickListener{ view->
-            
+        btnMeeting.setOnClickListener(View.OnClickListener { view ->
+            val intent = Intent(this, MeetingActivity::class.java)
+            startActivity(intent)
         })
 
         val btnTraining = findViewById<Button>(R.id.btnTraining_main)
@@ -96,7 +104,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnInventory = findViewById<Button>(R.id.btnInventory_main)
         btnInventory.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, InventoryActivity:: class.java)
         })
 
         val btnVolunteer = findViewById<Button>(R.id.btnVolunteer_main)
@@ -145,8 +153,12 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnRecipe = findViewById<Button>(R.id.btnRecipe_main)
+        btnRecipe.setOnClickListener {
+            val intent = Intent(this, RecipeActivity::class.java)
+            startActivity(intent)
+        }
         btnRecipe.setOnClickListener(View.OnClickListener{ view->
-            
+
         })
     }
 }
