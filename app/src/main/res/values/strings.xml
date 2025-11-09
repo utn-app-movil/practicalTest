@@ -5,7 +5,7 @@
     <string name="TextSave_menu">Guardar</string>
     <string name="TextDelete_menu">Eliminar</string>
     <string name="TextCancel_mnu">Cancelar</string>
-    <string name="MsgDuplicateDate">No se permiten datos duplicados</string>
+    <string name="MsgDuplicateData">No se permiten datos duplicados</string>
     <string name="MsgSaveSuccess">La información se guardó con éxito</string>
     <string name="MsgDeleteSuccess">La información se eliminó con éxito.</string>
     <string name="TextYes">Si</string>
@@ -23,5 +23,10 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="TournamentId">ID</string>
+    <string name="TournamentTitle">Título</string>
+    <string name="TournamentDescription">Descripción</string>
+    <string name="TournamentFecha">Fecha</string>
+    <string name="TournamentPrize">Premio</string>
 
 </resources>

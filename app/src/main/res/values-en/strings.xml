@@ -12,7 +12,7 @@
     <string name="TextSave_menu">Save</string>
     <string name="TextDelete_menu">Delete</string>
     <string name="TextCancel_mnu">Cancel</string>
-    <string name="MsgDuplicateDate">The information is duplicated.</string>
+    <string name="MsgDuplicateData">The information is duplicated.</string>
     <string name="MsgSaveSuccess">The information is saved successfully,</string>
     <string name="MsgDeleteSuccess">The information was deleted successfully.</string>
     <string name="TextYes">Yes</string>
@@ -20,6 +20,11 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="TournamentId">ID</string>
+    <string name="TournamentTitle">Title</string>
+    <string name="TournamentDescription">Description</string>
+    <string name="TournamentFecha">Date</string>
+    <string name="TournamentPrize">Prize</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 

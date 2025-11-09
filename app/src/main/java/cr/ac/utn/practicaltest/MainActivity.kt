@@ -1,5 +1,6 @@
 package cr.ac.utn.practicaltest
 
+import Util.Util
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -106,6 +107,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnEntertainment = findViewById<Button>(R.id.btnEntertainment_main)
         btnEntertainment.setOnClickListener(View.OnClickListener{ view->
+            Util.openActivity(this, EntertainmentActivity::class.java)
             
         })
 
