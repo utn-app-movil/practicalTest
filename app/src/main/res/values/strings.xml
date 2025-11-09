@@ -24,4 +24,21 @@
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
 
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SurveryActivity -->
+    <string name="ErrorMsgSaveAnswer">Error al guardar la respuesta.</string>
+    <string name="ErrorMsgSubmitSurvey">Error al enviar la encuesta</string>
+    <string name="MsgIncompleteSurvey">Por favor, responder todas las preguntas</string>
+    <string name="MsgSurveySubmitted">Encuesta enviada con éxito</string>
+
 </resources>

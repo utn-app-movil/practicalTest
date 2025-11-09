@@ -20,6 +20,10 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="ErrorMsgSaveAnswer">Error saving response.</string>
+    <string name="ErrorMsgSubmitSurvey">Error submitting survey.</string>
+    <string name="MsgIncompleteSurvey">Please answer all questions.</string>
+    <string name="MsgSurveySubmitted">Survey submitted successfully.</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
