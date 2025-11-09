@@ -2,7 +2,6 @@ package cr.ac.utn.practicaltest
 
 import Util.Util
 import Controller.Incident.IncidentActivity
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -52,7 +51,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnBooking = findViewById<Button>(R.id.btnBooking_main)
         btnBooking.setOnClickListener(View.OnClickListener{ view->
-
+            Util.openActivity(this,
+                BookingActivity::class.java)
         })
 
         val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnSupplier = findViewById<Button>(R.id.btnSupplier_main)
         btnSupplier.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, SupplierActivity::class.java)
         })
 
         val btnIncident = findViewById<Button>(R.id.btnIncident_main)
@@ -129,10 +129,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnLearning = findViewById<Button>(R.id.btnLearning_main)
-        btnLearning.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnLearning.setOnClickListener {
+            startActivity(Intent(this, LearningActivity::class.java))
 
+        }
         val btnHarvest = findViewById<Button>(R.id.btnHarvest_main)
         btnHarvest.setOnClickListener(View.OnClickListener{ view->
             

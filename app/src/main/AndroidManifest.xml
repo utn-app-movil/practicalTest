@@ -35,6 +35,13 @@
                 />
         </activity>
         <activity
+            android:name=".SupplierActivity"
+            android:exported="false">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -43,6 +50,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Booking screen -->
+        <activity android:name=".BookingActivity" android:exported="false" />
+
         <activity
             android:name=".FilmActivity"
             android:exported="false" />
@@ -55,7 +66,6 @@
 
         <!--Meeting CRUD screen -->
         <activity android:name=".MeetingActivity" />
-
     </application>
 
 </manifest>
