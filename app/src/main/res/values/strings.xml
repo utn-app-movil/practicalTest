@@ -36,10 +36,25 @@
     <string name="MsgTypeRequired_Esteban">El tipo de servicio es reuqerido.</string>
     <string name="MsgIdRequired_Esteban">El id del Provedor es reuqerido.</string>
     <string name="TextUpdateActionQuestion_Esteban">Desea actualizar la información</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="btnSeeNews">Ver Noticias.</string>
+    <string name="TextNewsManagement">Gestión de Noticias.</string>
+    <string name="TextTitle">Titulo:</string>
+    <string name="TextDate">Fecha (20251106):</string>
+    <string name="TextContent">Contenido:</string>
+    <string name="TextNewsTitle">Titulo de la Noticia:</string>
+    <string name="TextDate2">Fecha: 20251106</string>
+    <string name="MsgUpdateSuccess">Registro actualizado satisfactoriamente</string>
+    <string name="txtInscriptionId">N°Inscripción*</string>
+    <string name="txtFullName">Nombre completo*</string>
+    <string name="txtEmail">Correo eléctronico</string>
+    <string name="txtCourse">Nombre del curso*</string>
+    <string name="txtSchedule">Horario*</string>
+    <string name="txtTraining">Entrenador</string>
     <!-- ===== Learning Activity (ES) ===== -->
     <string name="learning_title">Gestión de Actividades Deportivas</string>
     <string name="learning_field_title">Nombre de la actividad</string>
@@ -58,11 +73,6 @@
     <string name="btnUserList">Lista usuarios</string>
     <string name="btnLoadUser">Gestionar usuarios</string>
     <string name="title_activity_meal_activity.kt">MealActivity.kt</string>
-
-
-
-
-
 
     <!-- ===== Meals (ES) ===== -->
     <string name="meals_title">Alimentos para Compartir</string>
