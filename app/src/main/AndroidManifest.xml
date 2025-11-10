@@ -14,36 +14,17 @@
         <activity android:name=".NewsListActivity" />
         <activity android:name=".NewsFormActivity" />
         <activity
-            android:name="cr.ac.utn.practicaltest.meals.MealActivity"
-            android:exported="true"
-            android:theme="@style/Theme.PracticalTest">
-       
-        </activity>
-
-        <activity
-            android:name=".UserActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity
             android:name=".MainActivity"
-            android:exported="false">
-           <intent-filter>
-              <action android:name="android.intent.action.MAIN" />
-              <category android:name="android.intent.category.LAUNCHER" />
-          </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".RecipeActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
-            android:name=".LearningActivity"
+            android:name=".EntertainmentActivity"
             android:exported="true" />
     </application>
 
