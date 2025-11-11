@@ -92,6 +92,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
         //-----------------------------------------------------------------------
         //SPINNER TIME OF VOLUNTEER
         val spinnerVTime = spinnerVTime
+<<<<<<< Updated upstream
+=======
+        //Voluntariados existentes
+>>>>>>> Stashed changes
         val optionsVolTime = arrayOf("8:00 p.m.", "9:00 p.m.", "10:00 p.m.", "1:00 p.m.", "2:00 p.m.")
 
         val spinnerVTSetText = ArrayAdapter(this, android.R.layout.simple_spinner_item, optionsVolTime)
@@ -117,7 +121,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
         try {
             if (isValidatedData()){
                 if (volunteerController.getVolunteerById(editTextIDV.text.toString()) != null && !IsEditMode){
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
                     Toast.makeText(this, "The info is duplicated"
                         , Toast.LENGTH_LONG).show()
                 }else{
@@ -131,7 +138,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
 
                     val person = Person()
                     person.ID = editTextIdPerson.text.toString()
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
                     person.Name = editTextName.text.toString()
                     person.FLastName = editTextFLName.text.toString()
                     person.SLastName = editTextSLName.text.toString()
@@ -166,7 +176,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
         try {
             volunteerController.removeVolunteer(editTextIDV.text.trim().toString())
             personController.removePerson(editTextIdPerson.text.trim().toString())
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
             cleanScreen()
             Toast.makeText(this, getString(R.string.MsgDeleteSuccess)
                 , Toast.LENGTH_LONG).show()
@@ -307,4 +320,8 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
             else -> super.onOptionsItemSelected(item)
         }
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }

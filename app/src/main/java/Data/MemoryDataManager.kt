@@ -4,7 +4,11 @@ import Entity.Person
 import Entity.Volunteer
 import Entity.Service
 
+<<<<<<< Updated upstream
 object MemoryDataManager: IDataManager, IDataManagerVolunteer{
+=======
+object MemoryDataManager: IDataManager{
+>>>>>>> Stashed changes
     private  var personList = mutableListOf<Person>()
     private  var volunteerList = mutableListOf<Volunteer>()
 

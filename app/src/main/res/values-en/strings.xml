@@ -20,6 +20,20 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
+    <string name="VolunteerTittle">Volunteer register</string>
+    <string name="txtTypeVolunteer">Volunteer type</string>
+    <string name="txtDateVolunteer">Volunteer date</string>
+    <string name="txtTimeVolunteer">Time volunteer</string>
+    <string name="txtVolunteerID">Volunteer ID</string>
+    <string name="txtPersonID">Identification</string>
+    <string name="txtPersonName">Name</string>
+    <string name="txtFLastName">First last name</string>
+    <string name="txtSLastName">Second last name</string>
+    <string name="txtPersonEmail">Email</string>
+    <string name="txtPersonPhone">Phone</string>
+    <string name="txtPersonState">State</string>
+    <string name="txtPersonDistrict">District</string>
+    <string name="txtPersonAddress">Address</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->

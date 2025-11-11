@@ -193,11 +193,19 @@
                 android:layout_height="wrap_content"
                 android:text="Learning" />
 
+<<<<<<< Updated upstream
              <Button
                  android:id="@+id/btnHarvest_main"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="Harvest" />
+=======
+            <Button
+                android:id="@+id/btnHarvest_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harvest" />
+>>>>>>> Stashed changes
         </TableRow>
 
         <TableRow

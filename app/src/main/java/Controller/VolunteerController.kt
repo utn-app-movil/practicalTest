@@ -46,7 +46,11 @@ class VolunteerController {
         }
     }
 
+<<<<<<< Updated upstream
 fun getVolunteerById(id: String): Volunteer?{
+=======
+    fun getVolunteerById(id: String): Volunteer?{
+>>>>>>> Stashed changes
         try {
             return dataManager.getVById(id)
         }catch (e: Exception){

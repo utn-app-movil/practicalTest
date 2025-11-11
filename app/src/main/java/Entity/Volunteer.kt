@@ -9,7 +9,10 @@ class Volunteer {
     private lateinit var date: LocalDate
     private lateinit var hour: String
     private lateinit var idPerson: String
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     var personList = mutableListOf<Person>()
 
     constructor()
@@ -42,5 +45,8 @@ class Volunteer {
     var IdPerson: String
         get() = this.idPerson
         set(value) {this.idPerson=value}
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
 }
