@@ -47,7 +47,11 @@ class VolunteerController {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 fun getVolunteerById(id: String): Volunteer?{
+=======
+    fun getVolunteerById(id: String): Volunteer?{
+>>>>>>> Stashed changes
 =======
     fun getVolunteerById(id: String): Volunteer?{
 >>>>>>> Stashed changes

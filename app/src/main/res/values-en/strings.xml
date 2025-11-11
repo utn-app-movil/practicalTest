@@ -34,6 +34,7 @@
     <string name="txtPersonState">State</string>
     <string name="txtPersonDistrict">District</string>
     <string name="txtPersonAddress">Address</string>
+<<<<<<< Updated upstream
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
@@ -62,6 +63,8 @@
     <string name="country_supplier">Country</string>
     <string name="city_supplier">City</string>
     <string name="post_code_supplier">Postal code</string>
+=======
+>>>>>>> Stashed changes
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 

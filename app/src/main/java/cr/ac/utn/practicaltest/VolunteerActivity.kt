@@ -93,6 +93,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
         //SPINNER TIME OF VOLUNTEER
         val spinnerVTime = spinnerVTime
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        //Voluntariados existentes
+>>>>>>> Stashed changes
 =======
         //Voluntariados existentes
 >>>>>>> Stashed changes
@@ -122,7 +126,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
             if (isValidatedData()){
                 if (volunteerController.getVolunteerById(editTextIDV.text.toString()) != null && !IsEditMode){
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                     Toast.makeText(this, "The info is duplicated"
@@ -139,7 +146,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
                     val person = Person()
                     person.ID = editTextIdPerson.text.toString()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                     person.Name = editTextName.text.toString()
@@ -177,7 +187,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
             volunteerController.removeVolunteer(editTextIDV.text.trim().toString())
             personController.removePerson(editTextIdPerson.text.trim().toString())
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             cleanScreen()
@@ -321,6 +334,10 @@ class VolunteerActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListene
         }
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes

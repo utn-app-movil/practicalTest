@@ -5,7 +5,11 @@ import Entity.Volunteer
 import Entity.Service
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 object MemoryDataManager: IDataManager, IDataManagerVolunteer{
+=======
+object MemoryDataManager: IDataManager{
+>>>>>>> Stashed changes
 =======
 object MemoryDataManager: IDataManager{
 >>>>>>> Stashed changes

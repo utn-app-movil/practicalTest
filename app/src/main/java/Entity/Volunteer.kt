@@ -10,7 +10,10 @@ class Volunteer {
     private lateinit var hour: String
     private lateinit var idPerson: String
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     var personList = mutableListOf<Person>()
@@ -46,7 +49,10 @@ class Volunteer {
         get() = this.idPerson
         set(value) {this.idPerson=value}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
