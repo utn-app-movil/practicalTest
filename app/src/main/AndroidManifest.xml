@@ -58,6 +58,15 @@
 
         <!--Meeting CRUD screen -->
         <activity android:name=".MeetingActivity" />
+
+        <activity
+            android:name="Controller.VisitActivity"
+            android:exported="false"
+            android:label="Gestión de Visitas" />
+        <activity
+            android:name="Controller.AddEditVisitActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
