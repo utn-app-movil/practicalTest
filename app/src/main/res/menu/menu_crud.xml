@@ -17,4 +17,13 @@
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="@string/TextCancel_mnu"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mnu_find_product"
+        android:title="Buscar Producto por ID"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"/>
 </menu>

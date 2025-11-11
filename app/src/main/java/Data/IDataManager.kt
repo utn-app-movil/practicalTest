@@ -1,6 +1,7 @@
 package Data
 
 import Entity.Person
+import Entity.Product
 
 interface IDataManager {
     fun add (person: Person)
@@ -9,4 +10,5 @@ interface IDataManager {
     fun getAll(): List<Person>
     fun getById(id: String): Person?
     fun getByFullName(fullName: String): Person?
+
 }

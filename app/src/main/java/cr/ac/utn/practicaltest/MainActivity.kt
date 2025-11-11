@@ -1,5 +1,6 @@
 package cr.ac.utn.practicaltest
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -40,7 +41,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnProduct = findViewById<Button>(R.id.btnProduct_main)
-        btnProduct.setOnClickListener(View.OnClickListener{ view->
+        btnProduct.setOnClickListener(View.OnClickListener{ val intent =
+            Intent(this, ProductActivity::class.java)
+            startActivity(intent)
 
         })
 

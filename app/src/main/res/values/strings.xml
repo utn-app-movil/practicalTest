@@ -24,4 +24,8 @@
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
 
+    <string name="products_title">Productos</string>
+    <string name="add_product">Agregar producto</string>
+    <string name="refresh">Actualizar</string>
+
 </resources>
