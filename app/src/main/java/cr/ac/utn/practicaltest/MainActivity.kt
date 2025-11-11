@@ -115,7 +115,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnEntertainment = findViewById<Button>(R.id.btnEntertainment_main)
         btnEntertainment.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, EntertainmentActivity::class.java)
+
         })
 
         val btnLibrary = findViewById<Button>(R.id.btnLibrary_main)

@@ -12,7 +12,7 @@
     <string name="TextSave_menu">Save</string>
     <string name="TextDelete_menu">Delete</string>
     <string name="TextCancel_mnu">Cancel</string>
-    <string name="MsgDuplicateDate">The information is duplicated.</string>
+    <string name="MsgDuplicateData">The information is duplicated.</string>
     <string name="MsgSaveSuccess">The information is saved successfully,</string>
     <string name="MsgDeleteSuccess">The information was deleted successfully.</string>
     <string name="TextYes">Yes</string>
@@ -22,8 +22,13 @@
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
-    <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
 
+    <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="TournamentId">ID</string>
+    <string name="TournamentTitle">Title</string>
+    <string name="TournamentDescription">Description</string>
+    <string name="TournamentFecha">Date</string>
+    <string name="TournamentPrize">Prize</string>
     <string name="TestID">ID</string>
     <string name="TextName">Name</string>
     <string name="Textflastname">First Last Name</string>
@@ -50,6 +55,8 @@
     <string name="post_code_supplier">Postal code</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
+
+    <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
     <string name="ElecServ">Electrical Incident</string>
     <string name="WatServ">Water Incident</string>
     <string name="SecServ">Security Incident</string>
