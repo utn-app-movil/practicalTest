@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,18 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticalTest">
-
+        <activity android:name=".NewsListActivity" />
+        <activity android:name=".NewsFormActivity" />
         <activity
-            android:name=".NewsListActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".NewsFormActivity"
-            android:exported="false" />
+            android:name="cr.ac.utn.practicaltest.meals.MealActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PracticalTest">
+        </activity>
 
         <activity
             android:name=".SponsorActivity"
-            android:exported="false" />
+            android:exported="true">
+        </activity>
 
         <activity
             android:name=".UserActivity"
@@ -40,13 +39,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <activity
             android:name=".RecipeActivity"
-            android:exported="false" />
+            android:exported="true">
+        </activity>
 
         <activity
             android:name=".LearningActivity"
-            android:exported="false" />
+            android:exported="true" />
+
     </application>
 </manifest>
