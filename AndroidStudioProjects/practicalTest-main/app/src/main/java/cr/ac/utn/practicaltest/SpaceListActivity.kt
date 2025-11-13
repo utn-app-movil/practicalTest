@@ -87,11 +87,17 @@ class SpaceListActivity : AppCompatActivity() {
             allSpaces.filter { it.Type == type }
         }
 
-        spaceAdapter = SpaceAdapter(filteredSpaces) { space ->
-            val intent = Intent(this, SpaceFormActivity::class.java)
-            intent.putExtra("SPACE_ID", space.ID)
-            startActivity(intent)
-        }
+        spaceAdapter = SpaceAdapter(
+            filteredSpaces,
+            onItemClick = { space ->
+                val intent = Intent(this, SpaceFormActivity::class.java)
+                intent.putExtra("SPACE_ID", space.ID)
+                startActivity(intent)
+            },
+            onSpaceDeleted = {
+                loadSpaces()
+            }
+        )
         rvSpaces.adapter = spaceAdapter
     }
 }

@@ -113,22 +113,18 @@ class SpaceFormActivity : AppCompatActivity() {
                 pricePerHour = etPricePerHour.text.toString().toDouble()
             )
 
-            val success = if (isEditMode) {
+            if (isEditMode) {
                 spaceController.updateSpace(space)
             } else {
                 spaceController.addSpace(space)
             }
 
-            if (success) {
-                Toast.makeText(
-                    this,
-                    if (isEditMode) "Espacio actualizado exitosamente" else "Espacio agregado exitosamente",
-                    Toast.LENGTH_SHORT
-                ).show()
-                finish()
-            } else {
-                Toast.makeText(this, "Error al guardar el espacio", Toast.LENGTH_SHORT).show()
-            }
+            Toast.makeText(
+                this,
+                if (isEditMode) "Espacio actualizado exitosamente" else "Espacio agregado exitosamente",
+                Toast.LENGTH_SHORT
+            ).show()
+            finish()
         } catch (e: Exception) {
             Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
         }

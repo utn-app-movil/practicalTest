@@ -64,4 +64,13 @@ class PersonController {
                 .getString(R.string.ErrorMsgRemove))
         }
     }
+
+    fun getAll(): List<Person>{
+        try {
+            return dataManager.getAll()
+        }catch (e: Exception){
+            throw Exception(context
+                .getString(R.string.ErrorMsgGetAll))
+        }
+    }
 }

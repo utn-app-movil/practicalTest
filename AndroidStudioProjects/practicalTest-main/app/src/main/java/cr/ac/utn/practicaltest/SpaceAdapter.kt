@@ -12,7 +12,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class SpaceAdapter(
     private var spaces: List<Space>,
-    private val onItemClick: (Space) -> Unit
+    private val onItemClick: (Space) -> Unit,
+    private val onSpaceDeleted: () -> Unit = {}
 ) : RecyclerView.Adapter<SpaceAdapter.SpaceViewHolder>() {
 
     class SpaceViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -65,10 +66,16 @@ class SpaceAdapter(
                 .setTitle("Eliminar Espacio")
                 .setMessage("¿Está seguro que desea eliminar ${space.Name}?")
                 .setPositiveButton("Eliminar") { _, _ ->
-                    val controller = SpaceController(holder.itemView.context)
-                    if (controller.deleteSpace(space.ID)) {
-                        // Refresh list
-                        (holder.itemView.context as? SpaceListActivity)?.onResume()
+                    try {
+                        val controller = SpaceController(holder.itemView.context)
+                        controller.removeSpace(space.ID)
+                        onSpaceDeleted()
+                    } catch (e: Exception) {
+                        AlertDialog.Builder(holder.itemView.context)
+                            .setTitle("Error")
+                            .setMessage(e.message)
+                            .setPositiveButton("OK", null)
+                            .show()
                     }
                 }
                 .setNegativeButton("Cancelar", null)

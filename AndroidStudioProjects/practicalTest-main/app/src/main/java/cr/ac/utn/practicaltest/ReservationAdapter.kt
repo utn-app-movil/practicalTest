@@ -13,20 +13,20 @@ import java.time.format.DateTimeFormatter
 
 class ReservationAdapter(
     private var reservations: List<Reservation>,
-    private val onItemClick: (Reservation) -> Unit
+    private val onItemClick: (Reservation) -> Unit,
+    private val onReservationCancelled: () -> Unit = {}
 ) : RecyclerView.Adapter<ReservationAdapter.ReservationViewHolder>() {
 
     class ReservationViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvReservationId: TextView = view.findViewById(R.id.tvReservationId)
         val tvReservationStatus: TextView = view.findViewById(R.id.tvReservationStatus)
         val tvSpaceName: TextView = view.findViewById(R.id.tvSpaceName)
-        val tvStartDateTime: TextView = view.findViewById(R.id.tvStartDateTime)
-        val tvEndDateTime: TextView = view.findViewById(R.id.tvEndDateTime)
+        val tvDateTime: TextView = view.findViewById(R.id.tvDateTime)
         val tvPurpose: TextView = view.findViewById(R.id.tvPurpose)
         val tvAttendees: TextView = view.findViewById(R.id.tvAttendees)
-        val tvTotalPrice: TextView = view.findViewById(R.id.tvTotalPrice)
+        val tvPrice: TextView = view.findViewById(R.id.tvPrice)
         val btnEdit: Button = view.findViewById(R.id.btnEdit)
-        val btnDelete: Button = view.findViewById(R.id.btnDelete)
+        val btnCancel: Button = view.findViewById(R.id.btnCancel)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReservationViewHolder {
@@ -42,11 +42,10 @@ class ReservationAdapter(
         holder.tvReservationId.text = "Reserva #${reservation.ID.take(8)}"
         holder.tvReservationStatus.text = reservation.Status.name
         holder.tvSpaceName.text = "Espacio ID: ${reservation.SpaceId.take(8)}"
-        holder.tvStartDateTime.text = "Inicio: ${reservation.StartDateTime.format(formatter)}"
-        holder.tvEndDateTime.text = "Fin: ${reservation.EndDateTime.format(formatter)}"
+        holder.tvDateTime.text = "${reservation.StartDateTime.format(formatter)} - ${reservation.EndDateTime.format(DateTimeFormatter.ofPattern("HH:mm"))}"
         holder.tvPurpose.text = "Propósito: ${reservation.Purpose}"
         holder.tvAttendees.text = "Asistentes: ${reservation.NumberOfAttendees}"
-        holder.tvTotalPrice.text = "Total: $${reservation.TotalPrice}"
+        holder.tvPrice.text = "Precio total: $${reservation.TotalPrice}"
 
         // Status color
         when (reservation.Status) {
@@ -77,21 +76,33 @@ class ReservationAdapter(
             onItemClick(reservation)
         }
 
-        // Delete button
-        holder.btnDelete.setOnClickListener {
+        // Cancel button
+        holder.btnCancel.setOnClickListener {
             AlertDialog.Builder(holder.itemView.context)
-                .setTitle("Eliminar Reserva")
-                .setMessage("¿Está seguro que desea eliminar esta reserva?")
-                .setPositiveButton("Eliminar") { _, _ ->
-                    val controller = ReservationController(holder.itemView.context)
-                    if (controller.deleteReservation(reservation.ID)) {
-                        (holder.itemView.context as? ReservationListActivity)?.onResume()
+                .setTitle("Cancelar Reserva")
+                .setMessage("¿Está seguro que desea cancelar esta reserva?")
+                .setPositiveButton("Cancelar Reserva") { _, _ ->
+                    try {
+                        val controller = ReservationController(holder.itemView.context)
+                        controller.cancelReservation(reservation.ID)
+                        onReservationCancelled()
+                    } catch (e: Exception) {
+                        AlertDialog.Builder(holder.itemView.context)
+                            .setTitle("Error")
+                            .setMessage(e.message)
+                            .setPositiveButton("OK", null)
+                            .show()
                     }
                 }
-                .setNegativeButton("Cancelar", null)
+                .setNegativeButton("No", null)
                 .show()
         }
     }
 
     override fun getItemCount() = reservations.size
+
+    fun updateReservations(newReservations: List<Reservation>) {
+        reservations = newReservations
+        notifyDataSetChanged()
+    }
 }

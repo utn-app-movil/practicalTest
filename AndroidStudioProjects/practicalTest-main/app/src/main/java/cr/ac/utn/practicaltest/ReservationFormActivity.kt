@@ -95,7 +95,7 @@ class ReservationFormActivity : AppCompatActivity() {
 
         // Setup person spinner
         val persons = personController.getAll()
-        val personNames = persons.map { "${it.Identification} - ${it.Name}" }
+        val personNames = persons.map { "${it.ID} - ${it.Name}" }
         val personAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, personNames)
         personAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerPerson.adapter = personAdapter
@@ -187,22 +187,18 @@ class ReservationFormActivity : AppCompatActivity() {
                 notes = etNotes.text?.toString() ?: ""
             )
 
-            val success = if (isEditMode) {
+            if (isEditMode) {
                 reservationController.updateReservation(reservation)
             } else {
                 reservationController.addReservation(reservation)
             }
 
-            if (success) {
-                Toast.makeText(
-                    this,
-                    if (isEditMode) "Reserva actualizada" else "Reserva creada",
-                    Toast.LENGTH_SHORT
-                ).show()
-                finish()
-            } else {
-                Toast.makeText(this, "Error al guardar", Toast.LENGTH_SHORT).show()
-            }
+            Toast.makeText(
+                this,
+                if (isEditMode) "Reserva actualizada" else "Reserva creada",
+                Toast.LENGTH_SHORT
+            ).show()
+            finish()
         } catch (e: Exception) {
             Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
         }

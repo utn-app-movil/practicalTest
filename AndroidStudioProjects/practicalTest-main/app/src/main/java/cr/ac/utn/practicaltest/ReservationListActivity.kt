@@ -87,11 +87,17 @@ class ReservationListActivity : AppCompatActivity() {
             allReservations.filter { it.Status == status }
         }
 
-        reservationAdapter = ReservationAdapter(filteredReservations) { reservation ->
-            val intent = Intent(this, ReservationFormActivity::class.java)
-            intent.putExtra("RESERVATION_ID", reservation.ID)
-            startActivity(intent)
-        }
+        reservationAdapter = ReservationAdapter(
+            filteredReservations,
+            onItemClick = { reservation ->
+                val intent = Intent(this, ReservationFormActivity::class.java)
+                intent.putExtra("RESERVATION_ID", reservation.ID)
+                startActivity(intent)
+            },
+            onReservationCancelled = {
+                loadReservations()
+            }
+        )
         rvReservations.adapter = reservationAdapter
     }
 }

@@ -16,14 +16,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnViewNews.setOnClickListener {
-            startActivity(Intent(this, NewsListActivity::class.java))
-        }
+        // News and User activities will be added by other team members
+        // binding.btnViewNews.setOnClickListener {
+        //     startActivity(Intent(this, NewsListActivity::class.java))
+        // }
 
-        val btnUserActivity = findViewById<Button>(R.id.btnManage_user)
-        btnUserActivity.setOnClickListener (View.OnClickListener { view ->
-            Util.Util.openActivity(this, UserActivity::class.java)
-        })
+        // val btnUserActivity = findViewById<Button>(R.id.btnManage_user)
+        // btnUserActivity.setOnClickListener (View.OnClickListener { view ->
+        //     Util.Util.openActivity(this, UserActivity::class.java)
+        // })
 
         val btnEvent = findViewById<Button>(R.id.btnEvent_main)
         btnEvent.setOnClickListener(View.OnClickListener{ view->
