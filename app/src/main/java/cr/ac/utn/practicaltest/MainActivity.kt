@@ -1,29 +1,37 @@
 package cr.ac.utn.practicaltest
 
 import android.content.Intent
+
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import cr.ac.utn.practicaltest.NewsListActivity
-import cr.ac.utn.practicaltest.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        binding.btnViewNews.setOnClickListener {
-            startActivity(Intent(this, NewsListActivity::class.java))
+        val btnViewNews = findViewById<Button>(R.id.btnViewNews)
+        btnViewNews.setOnClickListener {
+            val intent = Intent(this, NewsListActivity::class.java)
+            startActivity(intent)
+        }
+        val btnManageParticipant = findViewById<Button>(R.id.btnManage_participant)
+        btnManageParticipant.setOnClickListener {
+            Util.Util.openActivity(this, ParticipantActivity::class.java)
+        }
+        val btnManageScheduleActivity = findViewById<Button>(R.id.btnManage_schedule)
+        btnManageScheduleActivity.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
+            startActivity(intent)
+        }
+        val btnManageVolunteering = findViewById<Button>(R.id.btnManage_volunteering)
+        btnManageVolunteering.setOnClickListener {
+            Util.Util.openActivity(this, VolunteerActivity::class.java)
         }
 
-        val btnUserActivity = findViewById<Button>(R.id.btnManage_user)
-        btnUserActivity.setOnClickListener (View.OnClickListener { view ->
-            Util.Util.openActivity(this, UserActivity::class.java)
-        })
     }
 }

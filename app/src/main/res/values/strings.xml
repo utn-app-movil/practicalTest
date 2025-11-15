@@ -96,4 +96,42 @@
 
 
     <!-- FIN USER -->
+
+
+    <!-- Participant -->
+    <string name="participant_registration_title">Registro de Participante</string>
+    <string name="participant_id_hint">Cédula</string>
+    <string name="participant_name_hint">Nombre</string>
+    <string name="participant_flastname_hint">Primer Apellido</string>
+    <string name="participant_slastname_hint">Segundo Apellido</string>
+    <string name="participant_email_hint">Correo Electrónico</string>
+    <string name="participant_phone_hint">Teléfono</string>
+    <string name="participant_birthday_label">Fecha de Nacimiento</string>
+    <string name="participant_birthday_hint">Seleccionar fecha</string>
+    <string name="participant_saved_message">Participante guardado.</string>
+    <string name="participant_deleted_message">Participante eliminado.</string>
+    <string name="fill_required_fields_message">Por favor, complete todos los campos requeridos.</string>
+    <!-- Schedule -->
+    <string name="hint_schedule_id">ID</string>
+    <string name="hint_schedule_day">Día</string>
+    <string name="hint_schedule_startTime">Seleccionar hora de inicio</string>
+    <string name="hint_schedule_endTime">Seleccionar hora de fin</string>
+    <string name="hint_schedule_location">Ubicación</string>
+    <string name="msg_fill_all_fields">Por favor complete todos los campos</string>
+    <string name="msg_schedule_saved">Horario guardado correctamente</string>
+    <string name="msg_schedule_error">Error al guardar el horario</string>
+    <string name="msg_schedule_deleted">Horario eliminado</string>
+    <string name="msg_schedule_not_found">No se encontró el horario con ese ID</string>
+
+    <!-- Volunteer-->
+    <string name="volunteering_activity_title">Registro de Actividad Voluntaria</string>
+    <string name="hint_activity_id">ID de la actividad</string>
+    <string name="hint_activity_title">Título de la actividad</string>
+    <string name="hint_activity_description">Descripción</string>
+    <string name="hint_activity_schedule">Seleccione un horario</string>
+    <string name="msg_activity_saved">Actividad guardada correctamente</string>
+    <string name="msg_activity_error">Error al guardar la actividad</string>
+    <string name="msg_activity_deleted">Actividad eliminada</string>
+    <string name="msg_activity_not_found">No se encontró la actividad con ese ID</string>
+
 </resources>

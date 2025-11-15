@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="selected_task_stroke">4dp</dimen>
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="selected_task_stroke">4dp</dimen>
+</resources>
+>>>>>>> 5b3db453399a7a47d6af935620f873db3690fa42
