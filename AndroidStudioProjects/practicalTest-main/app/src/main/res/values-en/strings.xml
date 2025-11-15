@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <string name="app_name">Practical Test</string>
-=======
-    <string name="app_name">PracticalTest</string>
->>>>>>> origin/dev-team2
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
     <string name="ErrorMsgAdd">Error when adding the information.</string>
@@ -17,14 +13,14 @@
     <string name="TextDelete_menu">Delete</string>
     <string name="TextCancel_mnu">Cancel</string>
     <string name="MsgDuplicateDate">The information is duplicated.</string>
-    <string name="MsgSaveSuccess">Saved Sucessfully</string>
+    <string name="MsgSaveSuccess">Saved Successfully</string>
     <string name="MsgDeleteSuccess">The information was deleted successfully.</string>
     <string name="TextYes">Yes</string>
     <string name="TextNo">No</string>
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
-           
+
     <string name="learning_title">Learning Activity</string>
     <string name="learning_add_title">New class</string>
     <string name="learning_edit_title">Edit class</string>
@@ -43,6 +39,7 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+
     <string name="btnSeeNews"> See News.</string>
     <string name="TextNewsManagement">News Management.</string>
     <string name="TextTitle">Title:</string>
@@ -58,7 +55,6 @@
     <string name="txtSchedule">Schedule*</string>
     <string name="txtTraining">Trainer</string>
 
-    <!-- USER -->
     <string name="MsgIncompleteData">Incomplete data</string>
     <string name="TextIDUser">"ID * "</string>
     <string name="TextNameUser">Name *</string>
@@ -71,7 +67,6 @@
 
     <!-- FIN USER -->
 
-    <!-- ===== Meals (EN) ===== -->
     <string name="title_activity_meal_activity.kt">Meal Activity</string>
     <string name="meals_title">Meals to Share</string>
     <string name="meals_list_title">Saved meals</string>
@@ -99,36 +94,6 @@
     <string name="meal_added">Meal added</string>
     <string name="meal_updated">Meal updated</string>
     <string name="meal_deleted">Meal deleted</string>
-    <string name="meal_delete_confirm">Delete “%1$s”?</string>
-  
-    <!--Esteban Sponsor-->
-    <string name="sponsor_header_title">Sponsor</string>
-    <string name="sponsor_id_label">Id Provedor</string>
-    <string name="sponsor_company_name_label">Nombre de la Empresa</string>
-    <string name="sponsor_support_type_label">Tipo de Apoyo</string>
-    <string name="sponsor_support_type_economic">Economico</string>
-    <string name="sponsor_support_type_material">Material</string>
-    <string name="sponsor_support_type_service">Servicio</string>
-    <string name="sponsor_contact_section_label">Contactos</string>
-    <string name="sponsor_contact_name_hint">Nombre del Contacto</string>
-    <string name="sponsor_contact_email_hint">Email del Contacto (Ej: example@gmail.com)</string>
-    <string name="sponsor_contact_phone_hint">Número de Teléfono del Contacto</string>
-    <string name="sponsor_support_detail_label">Detalle (Opcional)</string>
-    <string name="MsgDuplicated_Esteban">Id del Provedor duplicado</string>
-    <string name="MsgInvalidData_Esteban">Campos Incompletos</string>
-    <string name="MsgTypeRequired_Esteban">El tipo de servicio es reuqerido.</string>
-    <string name="MsgIdRequired_Esteban">El id del Provedor es reuqerido.</string>
-    <string name="TextUpdateActionQuestion_Esteban">Desea actualizar la información</string>
-    <!--Esteban Sponsor-->
-
-    <string name="hint_event_id">ID del evento</string>
-    <string name="hint_title">Título</string>
-    <string name="hint_description">Descripción</string>
-    <string name="hint_date">Fecha (YYYY-MM-DD)</string>
-    <string name="hint_time">Hora (HH:MM)</string>
-    <string name="hint_location">Lugar</string>
-    <string name="hint_organizer">Organizador</string>
-
-
+    <string name="meal_delete_confirm">Delete "%1$s"?</string>
 
 </resources>

@@ -3,11 +3,7 @@ package Entity
 import android.graphics.Bitmap
 import java.time.LocalDate
 
-<<<<<<< HEAD
-class Person: Identifier {
-=======
 class Person {
->>>>>>> origin/dev-team2
     private var id: String=""
     private var name: String=""
     private var fLastName: String=""
@@ -27,11 +23,7 @@ class Person {
             , district: String, address: String, latitude: Int
             , longitude: Int, photo: Bitmap?)
     {
-<<<<<<< HEAD
-        this.ID=id
-=======
         this.id=id
->>>>>>> origin/dev-team2
         this.name=name
         this.fLastName=flastname
         this.sLastName=slastname
@@ -42,13 +34,10 @@ class Person {
         this.address=address
     }
 
-<<<<<<< HEAD
-=======
     var ID: String
         get() = this.id
         set(value) {this.id=value}
 
->>>>>>> origin/dev-team2
     var Name: String
         get() = this.name
         set(value) {this.name=value}
@@ -81,10 +70,5 @@ class Person {
         get() = this.address
         set(value) {this.address=value}
 
-<<<<<<< HEAD
-    override val FullName = "$this.name $this.fLastName $this.sLastName"
-    override val FullDescription = ""
-=======
-    fun FullName() = "$this.name $this.fLastName $this.sLastName"
->>>>>>> origin/dev-team2
+    fun FullName() = "$name $fLastName $sLastName"
 }
