@@ -97,4 +97,14 @@
     <string name="meal_deleted">Meal deleted</string>
     <string name="meal_delete_confirm">Delete “%1$s”?</string>
 
+    <string name="hint_event_id">ID del evento</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_description">Descripción</string>
+    <string name="hint_date">Fecha (YYYY-MM-DD)</string>
+    <string name="hint_time">Hora (HH:MM)</string>
+    <string name="hint_location">Lugar</string>
+    <string name="hint_organizer">Organizador</string>
+
+
+
 </resources>

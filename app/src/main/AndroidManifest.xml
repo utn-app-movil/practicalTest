@@ -31,20 +31,29 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".RecipeActivity"
             android:exported="true" />
         <activity
             android:name=".LearningActivity"
             android:exported="true" />
-    </application>
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventoListaActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EventoFormularioActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
 </manifest>
