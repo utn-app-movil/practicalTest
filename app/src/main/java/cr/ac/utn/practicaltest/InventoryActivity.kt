@@ -98,7 +98,7 @@ class InventoryActivity : AppCompatActivity() {
                 if (inventoryController.getById(txtId.text.toString().trim()) != null
                     && !IsEditMode
                 ) {
-                    Toast.makeText(this, getString(R.string.MsgDuplicateDate)
+                    Toast.makeText(this, getString(R.string.MsgDuplicateData)
                         , Toast.LENGTH_LONG).show()
                 }else{
                     val inventory = Inventory()

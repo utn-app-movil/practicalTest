@@ -2,7 +2,6 @@ package cr.ac.utn.practicaltest
 
 import Util.Util
 import Controller.Incident.IncidentActivity
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -10,6 +9,7 @@ import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
+import Controller.VisitActivity
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener(View.OnClickListener{ view->
-
+            Util.openActivity(this, NewsActivity::class.java)
         })
 
         val btnTask = findViewById<Button>(R.id.btnTask_main)
@@ -52,7 +52,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnBooking = findViewById<Button>(R.id.btnBooking_main)
         btnBooking.setOnClickListener(View.OnClickListener{ view->
-
+            Util.openActivity(this,
+                BookingActivity::class.java)
         })
 
         val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnSupplier = findViewById<Button>(R.id.btnSupplier_main)
         btnSupplier.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, SupplierActivity::class.java)
         })
 
         val btnIncident = findViewById<Button>(R.id.btnIncident_main)
@@ -87,9 +88,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnVisit = findViewById<Button>(R.id.btnVisit_main)
-        btnVisit.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        btnVisit.setOnClickListener {
+            Util.openActivity(this, VisitActivity::class.java)
+        }
 
         val btnMeeting = findViewById<Button>(R.id.btnMeeting_main)
         btnMeeting.setOnClickListener(View.OnClickListener { view ->
@@ -114,7 +115,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnEntertainment = findViewById<Button>(R.id.btnEntertainment_main)
         btnEntertainment.setOnClickListener(View.OnClickListener{ view->
-            
+            Util.openActivity(this, EntertainmentActivity::class.java)
+
         })
 
         val btnLibrary = findViewById<Button>(R.id.btnLibrary_main)
