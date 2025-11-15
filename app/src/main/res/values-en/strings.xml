@@ -128,4 +128,14 @@
     <string name="msg_activity_deleted">Activity deleted</string>
     <string name="msg_activity_not_found">Activity with that ID not found</string>
 
+    <string name="hint_event_id">ID del evento</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_description">Descripción</string>
+    <string name="hint_date">Fecha (YYYY-MM-DD)</string>
+    <string name="hint_time">Hora (HH:MM)</string>
+    <string name="hint_location">Lugar</string>
+    <string name="hint_organizer">Organizador</string>
+
+
+
 </resources>
