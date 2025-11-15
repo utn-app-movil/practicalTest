@@ -100,7 +100,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnTraining = findViewById<Button>(R.id.btnTraining_main)
         btnTraining.setOnClickListener(View.OnClickListener{ view->
-            
+            val intent = Intent(this, TrainingActivity::class.java)
+            startActivity(intent)
         })
 
         val btnInventory = findViewById<Button>(R.id.btnInventory_main)
