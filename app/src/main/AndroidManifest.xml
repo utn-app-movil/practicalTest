@@ -27,6 +27,8 @@
             android:name=".InventoryActivity"
             android:exported="false" />
         <activity
+            android:name=".VehicleActivity"
+            android:exported="false" />
             android:name=".EntertainmentActivity"
             android:exported="false" >
             <meta-data

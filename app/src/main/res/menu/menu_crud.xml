@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/mnu_save"
+        android:id="@+id/menu_Save"
         android:icon="@android:drawable/ic_menu_save"
         android:title="@string/TextSave_menu"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/mnu_delete"
+        android:id="@+id/menu_Delete"
         android:icon="@android:drawable/ic_menu_delete"
         android:title="@string/TextDelete_menu"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/mnu_cancel"
+        android:id="@+id/menu_Cancel"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="@string/TextCancel_mnu"
         app:showAsAction="ifRoom" />

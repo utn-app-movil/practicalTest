@@ -41,15 +41,6 @@ class PersonController {
         }
     }
 
-    fun getByFullName(fullname: String): Person?{
-        try {
-            return dataManager.
-                getByFullName(fullname)
-        }catch (e: Exception){
-            throw Exception(context
-                .getString(R.string.ErrorMsgGetById))
-        }
-    }
 
     fun removePerson(id: String){
         try{
@@ -64,4 +55,15 @@ class PersonController {
                 .getString(R.string.ErrorMsgRemove))
         }
     }
+
+    fun getByFullName(fullname: String): Person?{
+        try {
+            return dataManager.
+            getByFullName(fullname)
+        }catch (e: Exception){
+            throw Exception(context
+                .getString(R.string.ErrorMsgGetById))
+        }
+    }
+
 }
