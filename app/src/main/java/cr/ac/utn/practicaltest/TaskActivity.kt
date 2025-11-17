@@ -1,98 +1,57 @@
 package cr.ac.utn.practicaltest
+
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
-import com.tuapp.data.DataManager
-import com.tuapp.entity.Task
-import com.tuapp.util.Utils
-import com.tuapp.R
+import Data.TaskMemoryManager
 
-class MainActivity : AppCompatActivity() {
+class TaskActivity : AppCompatActivity() {
 
-    private lateinit var etTaskName: EditText
-    private lateinit var etTaskDescription: EditText
-    private lateinit var btnAddTask: Button
-    private lateinit var btnUpdateTask: Button
-    private lateinit var btnDeleteTask: Button
-    private lateinit var lvTasks: ListView
-
-    private val dataManager = DataManager()
-    private var selectedTaskId: Int? = null
+    private lateinit var listView: ListView
     private lateinit var adapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_task)
 
-        etTaskName = findViewById(R.id.etTaskName)
-        etTaskDescription = findViewById(R.id.etTaskDescription)
-        btnAddTask = findViewById(R.id.btnAddTask)
-        btnUpdateTask = findViewById(R.id.btnUpdateTask)
-        btnDeleteTask = findViewById(R.id.btnDeleteTask)
-        lvTasks = findViewById(R.id.lvTasks)
+        val etTitle = findViewById<EditText>(R.id.etTaskTitle)
+        val etDescription = findViewById<EditText>(R.id.etTaskDescription)
+        val etUser = findViewById<EditText>(R.id.etTaskUser)
+        val btnAddTask = findViewById<Button>(R.id.btnAddTask)
+        listView = findViewById(R.id.listViewTasks)
 
-        adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, mutableListOf())
-        lvTasks.adapter = adapter
+        actualizarLista()
 
-        // Botón Agregar
         btnAddTask.setOnClickListener {
-            val name = etTaskName.text.toString()
-            val desc = etTaskDescription.text.toString()
-            if (name.isNotEmpty() && desc.isNotEmpty()) {
-                val task = Task(Utils.generateId(), name, desc)
-                dataManager.addTask(task)
-                refreshList()
-                clearFields()
-            } else {
-                Toast.makeText(this, "Rellena todos los campos", Toast.LENGTH_SHORT).show()
-            }
+
+            TaskMemoryManager.addTask(
+                etTitle.text.toString(),
+                etDescription.text.toString(),
+                etUser.text.toString()
+            )
+
+            actualizarLista()
+
+            etTitle.text.clear()
+            etDescription.text.clear()
+            etUser.text.clear()
         }
 
-        // Seleccionar tarea
-        lvTasks.setOnItemClickListener { _, _, position, _ ->
-            val task = dataManager.getAllTasks()[position]
-            etTaskName.setText(task.getName())
-            etTaskDescription.setText(task.getDescription())
-            selectedTaskId = task.getId()
-        }
+        listView.setOnItemLongClickListener { _, _, position, _ ->
 
-        // Botón Actualizar
-        btnUpdateTask.setOnClickListener {
-            val id = selectedTaskId
-            if (id != null) {
-                dataManager.updateTask(id, etTaskName.text.toString(), etTaskDescription.text.toString())
-                refreshList()
-                clearFields()
-            } else {
-                Toast.makeText(this, "Selecciona una tarea para actualizar", Toast.LENGTH_SHORT).show()
-            }
-        }
+            val tarea = TaskMemoryManager.getAllTasks()[position]
+            TaskMemoryManager.deleteTask(tarea.id)
 
-        // Botón Eliminar
-        btnDeleteTask.setOnClickListener {
-            val id = selectedTaskId
-            if (id != null) {
-                dataManager.deleteTask(id)
-                refreshList()
-                clearFields()
-            } else {
-                Toast.makeText(this, "Selecciona una tarea para eliminar", Toast.LENGTH_SHORT).show()
-            }
+            actualizarLista()
+            true
         }
-
-        refreshList()
     }
 
-    private fun refreshList() {
-        val tasks = dataManager.getAllTasks()
-        adapter.clear()
-        adapter.addAll(tasks.map { "${it.getId()} - ${it.getName()}" })
-    }
+    private fun actualizarLista() {
+        val tareas = TaskMemoryManager.getAllTasks()
+        val listaStrings = tareas.map { "${it.id}. ${it.title} - ${it.user}" }
 
-    private fun clearFields() {
-        etTaskName.text.clear()
-        etTaskDescription.text.clear()
-        selectedTaskId = null
+        adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listaStrings)
+        listView.adapter = adapter
     }
 }
-

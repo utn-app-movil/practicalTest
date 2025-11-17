@@ -1,8 +1,10 @@
 package cr.ac.utn.practicaltest
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -36,6 +38,11 @@ class MainActivity : AppCompatActivity() {
 
         val btnTask = findViewById<Button>(R.id.btnTask_main)
         btnTask.setOnClickListener(View.OnClickListener{ view->
+
+            Toast.makeText(this, "Click en TASK", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, TaskActivity::class.java)
+            startActivity(intent)
 
         })
 
