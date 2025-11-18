@@ -5,12 +5,12 @@
     <string name="TextSave_menu">Guardar</string>
     <string name="TextDelete_menu">Eliminar</string>
     <string name="TextCancel_mnu">Cancelar</string>
-    <string name="MsgDuplicateDate">No se permiten datos duplicados</string>
+    <string name="MsgDuplicateData">No se permiten datos duplicados</string>
     <string name="MsgSaveSuccess">La información se guardó con éxito</string>
     <string name="MsgDeleteSuccess">La información se eliminó con éxito.</string>
     <string name="TextYes">Si</string>
     <string name="TextNo">No</string>
-    <string name="TextTitleDialogQuestion">Pregunta...</string>
+    <string name="TextTitleDialogQuestion">Pregunta…</string>
     <string name="TextSaveActionQuestion">Desea guardar la información?</string>
     <string name="TextDeleteActionQuestion">Desea eliminar la información?</string>
     <string name="ErrorMsgAdd">Error al agregar la información.</string>
@@ -19,6 +19,15 @@
     <string name="ErrorMsgGetAll">Error al obtener la lista de datos.</string>
     <string name="ErrorMsgGetById">Error al obtener un dato en específico.</string>
     <string name="MsgDataNoFound">El dato no fue encontrado.</string>
+    <string name="name_supplier">Nombre</string>
+    <string name="phone_supplier">Teléfono</string>
+    <string name="email_supplier">Correo Elec</string>
+    <string name="contact_name_supplier">Nombre del contacto</string>
+    <string name="address_supplier">Dirección</string>
+    <string name="country_supplier">País</string>
+    <string name="city_supplier">Ciudad</string>
+    <string name="post_code_supplier">Código postal</string>
+
     <string name="GetAllTask">Mostrar la tarea</string>
     <string name="getname">muestrame el nombre</string>
     <string name="getremove">mover</string>
@@ -27,6 +36,100 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="TournamentId">ID</string>
+    <string name="TournamentTitle">Título</string>
+    <string name="TournamentDescription">Descripción</string>
+    <string name="TournamentFecha">Fecha</string>
+    <string name="TournamentPrize">Premio</string>
+    <!-- Incidencias -->
+    <string name="ElecServ">Incidencia Eléctrica</string>
+    <string name="WatServ">Incidencia de Agua</string>
+    <string name="SecServ">Incidencia de Seguridad</string>
+    <string name="incident_title">Gestión de Incidencias</string>
+    <string name="nameofReport">Nombre del Reportante</string>
+    <string name="located">Ubicación (ej. Calle, Nº, Piso)</string>
+    <string name="descriptionIssue">Descripción del problema</string>
+    <string name="savebtn">Guardar</string>
+    <string name="severity_label">Severidad</string>
+    <string name="date_label">Fecha</string>
+    <string name="report_saved">Reporte guardado</string>
+    <string name="severity_low">Baja</string>
+    <string name="severity_medium">Media</string>
+    <string name="severity_high">Alta</string>
+    <string name="error_required_fields">Complete ubicación y descripción</string>
+    <string name="saved_and_close">Reporte guardado y cerrado</string>
+    <string name="severity_prompt">Seleccione severidad</string>
 
+    <!-- Otros (parte del merge) -->
+    <string name="estado_civil_prompt" translatable="false">* Estado civil</string>
+    <string-array name="estado_civil">
+        <item>Soltero/a</item>
+        <item>Casado/a</item>
+        <item>Unión libre</item>
+        <item>Divorciado/a</item>
+        <item>Viudo/a</item>
+    </string-array>
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Nombre de recurso</string>
+    <string name="TextCategory">Categoria</string>
+    <string name="TextQuantity">Cantidad</string>
+    <string name="TextProvider">Proveedor</string>
+    <string name="btnSaveInventory">Guardar inventario</string>
+
+    <string name="TestID">Cedula</string>
+    <string name="TextName">Nombre</string>
+    <string name="Textflastname">Primer Apellido</string>
+    <string name="Textslastname">Segundo apellido</string>
+    <string name="Textphone">Telefono</string>
+    <string name="Textemail">Correo</string>
+    <string name="Textstate">Estado</string>
+    <string name="Textdistrict">Distrito</string>
+    <string name="Textaddress">Direccion</string>
+    <string name="Textsave">Guardar</string>
+
+
+    <string name="title_meeting_activity">Reuniones</string>
+    <string name="add_meeting">Agregar una reunión</string>
+
+    <!-- STRINGS OF dialog_add_meeting -->
+    <string name="edit">Editar</string>
+    <string name="delete">Borrar</string>
+    <string name="add_meeting_dialog_title">Agregar reunión</string>
+    <string name="edit_meeting_dialog_title">Editar reunión</string>
+
+    <!-- BookingActivity layout -->
+    <string name="booking_title">Reserva</string>
+    <string name="booking_id_label">ID de la reserva</string>
+    <string name="space_name_label">Nombre del espacio</string>
+    <string name="space_type_label">Tipo de espacio</string>
+    <string name="space_type_hint">Cancha, salón, etc.</string>
+    <string name="start_datetime_label">Inicio de la reserva</string>
+    <string name="select_start_datetime">Seleccionar fecha y hora de inicio</string>
+    <string name="end_datetime_label">Fin de la reserva</string>
+    <string name="select_end_datetime">Seleccionar fecha y hora de fin</string>
+    <string name="status_label">Estado</string>
+    <string name="person_label">Persona</string>
+    <string name="person_id_hint">ID de la persona</string>
+    <string name="person_name_label">Nombre de la persona</string>
+    <string name="save_booking_button">Guardar reserva</string>
+
+    <!-- BookingActivity -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="MsgEndDateBeforeStart">La fecha/hora de fin no puede ser menor que la de inicio</string>
+
+    <string name="VolunteerTittle">Registro de voluntarios</string>
+    <string name="txtTypeVolunteer">Tipo de voluntariado</string>
+    <string name="txtDateVolunteer">Fecha del voluntariado</string>
+    <string name="txtTimeVolunteer">Hora del voluntariado</string>
+    <string name="txtVolunteerID">ID del voluntariado</string>
+    <string name="txtPersonID">Identificación</string>
+    <string name="txtPersonName">Nombre</string>
+    <string name="txtFLastName">Primer apellido</string>
+    <string name="txtSLastName">Segundo apellido</string>
+    <string name="txtPersonEmail">Correo</string>
+    <string name="txtPersonPhone">Teléfono</string>
+    <string name="txtPersonState">Estado</string>
+    <string name="txtPersonDistrict">Distrito</string>
+    <string name="txtPersonAddress">Dirección</string>
 
 </resources>

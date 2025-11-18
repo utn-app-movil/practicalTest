@@ -12,7 +12,7 @@
     <string name="TextSave_menu">Save</string>
     <string name="TextDelete_menu">Delete</string>
     <string name="TextCancel_mnu">Cancel</string>
-    <string name="MsgDuplicateDate">The information is duplicated.</string>
+    <string name="MsgDuplicateData">The information is duplicated.</string>
     <string name="MsgSaveSuccess">The information is saved successfully,</string>
     <string name="MsgDeleteSuccess">The information was deleted successfully.</string>
     <string name="TextYes">Yes</string>
@@ -28,4 +28,92 @@
 
 
     <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="TournamentId">ID</string>
+    <string name="TournamentTitle">Title</string>
+    <string name="TournamentDescription">Description</string>
+    <string name="TournamentFecha">Date</string>
+    <string name="TournamentPrize">Prize</string>
+    <string name="TestID">ID</string>
+    <string name="TextName">Name</string>
+    <string name="Textflastname">First Last Name</string>
+    <string name="Textslastname">Second Last Name</string>
+    <string name="Textphone">Phone</string>
+    <string name="Textemail">Email</string>
+    <string name="Textstate">State</string>
+    <string name="Textdistrict">District</string>
+    <string name="Textaddress">Address</string>
+    <string name="Textsave">Save</string>
+    <string name="title_meeting_activity">Meetings</string>
+    <string name="add_meeting">Add a meeting</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add_meeting_dialog_title">Add meeting</string>
+    <string name="edit_meeting_dialog_title">Edit meeting</string>
+    <string name="name_supplier">Name</string>
+    <string name="phone_supplier">Phone</string>
+    <string name="email_supplier">E-mail</string>
+    <string name="contact_name_supplier">Contact Name</string>
+    <string name="address_supplier">Address</string>
+    <string name="country_supplier">Country</string>
+    <string name="city_supplier">City</string>
+    <string name="post_code_supplier">Postal code</string>
+    <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
+
+
+    <!-- AGREGAR SUS STRING DE AQUI EN ADELANTE -->
+    <string name="ElecServ">Electrical Incident</string>
+    <string name="WatServ">Water Incident</string>
+    <string name="SecServ">Security Incident</string>
+    <string name="incident_title">Incident Management</string>
+    <string name="nameofReport">Reporter Name</string>
+    <string name="located">Location (e.g. Street, Nº, Floor)</string>
+    <string name="descriptionIssue">Issue description</string>
+    <string name="savebtn">Save</string>
+    <string name="severity_label">Severity</string>
+    <string name="date_label">Date</string>
+    <string name="report_saved">Report saved</string>
+    <string name="severity_low">Low</string>
+    <string name="severity_medium">Medium</string>
+    <string name="severity_high">High</string>
+    <string name="error_required_fields">Please complete location and description</string>
+    <string name="saved_and_close">Report saved and closed</string>
+    <string name="severity_prompt">Select severity</string>
+    <string name="TextId">ID</string>
+    <string name="TextResourceName">Resource name</string>
+    <string name="TextCategory">Category</string>
+    <string name="TextQuantity">Quantity</string>
+    <string name="TextProvider">Provider</string>
+    <string name="btnSaveInventory">Save inventory</string>
+
+    <string name="booking_title">Booking</string>
+    <string name="booking_id_label">ID Booking</string>
+    <string name="space_name_label">Space name</string>
+    <string name="space_type_label">Type space</string>
+    <string name="space_type_hint">Court, hall, etc.</string>
+    <string name="start_datetime_label">Start of reservation</string>
+    <string name="select_start_datetime">Select start date and time</string>
+    <string name="end_datetime_label">End of reservation</string>
+    <string name="select_end_datetime">Select end date and time</string>
+    <string name="status_label">State</string>
+    <string name="person_label">Person</string>
+    <string name="person_id_hint">ID Person</string>
+    <string name="person_name_label">Person\'s name</string>
+    <string name="save_booking_button">"Save reservation "</string>
+    <string name="MsgIncompleteData">Incomplete data</string>
+    <string name="MsgEndDateBeforeStart">The end date/time cannot be earlier than the start date/time.</string>
+
+    <string name="VolunteerTittle">Volunteer register</string>
+    <string name="txtTypeVolunteer">Volunteer type</string>
+    <string name="txtDateVolunteer">Volunteer date</string>
+    <string name="txtTimeVolunteer">Time volunteer</string>
+    <string name="txtVolunteerID">Volunteer ID</string>
+    <string name="txtPersonID">Identification</string>
+    <string name="txtPersonName">Name</string>
+    <string name="txtFLastName">First last name</string>
+    <string name="txtSLastName">Second last name</string>
+    <string name="txtPersonEmail">Email</string>
+    <string name="txtPersonPhone">Phone</string>
+    <string name="txtPersonState">State</string>
+    <string name="txtPersonDistrict">District</string>
+    <string name="txtPersonAddress">Address</string>
 </resources>

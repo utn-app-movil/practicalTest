@@ -56,10 +56,10 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        val btnSurvey = findViewById<Button>(R.id.btnSurvery_main)
-        btnSurvey.setOnClickListener(View.OnClickListener{ view->
-            
-        })
+        val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
+        btnSurvey.setOnClickListener {
+            Util.openActivity(this, SurveyActivity::class.java)
+        }
 
         val btnReceipt = findViewById<Button>(R.id.btnReceipt_main)
         btnReceipt.setOnClickListener(View.OnClickListener{ view->
@@ -152,8 +152,12 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnRecipe = findViewById<Button>(R.id.btnRecipe_main)
+        btnRecipe.setOnClickListener {
+            val intent = Intent(this, RecipeActivity::class.java)
+            startActivity(intent)
+        }
         btnRecipe.setOnClickListener(View.OnClickListener{ view->
-            
+
         })
     }
 }
