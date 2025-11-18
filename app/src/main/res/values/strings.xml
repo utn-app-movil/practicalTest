@@ -28,6 +28,10 @@
     <string name="city_supplier">Ciudad</string>
     <string name="post_code_supplier">Código postal</string>
 
+    <string name="GetAllTask">Mostrar la tarea</string>
+    <string name="getname">muestrame el nombre</string>
+    <string name="getremove">mover</string>
+    <string name="Getadd">mostara lo agrgado</string>
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
@@ -127,4 +131,5 @@
     <string name="txtPersonState">Estado</string>
     <string name="txtPersonDistrict">Distrito</string>
     <string name="txtPersonAddress">Dirección</string>
+
 </resources>

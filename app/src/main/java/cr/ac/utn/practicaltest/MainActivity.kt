@@ -1,15 +1,13 @@
 package cr.ac.utn.practicaltest
 
-import Util.Util
-import Controller.Incident.IncidentActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
-import Controller.VisitActivity
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
@@ -24,24 +22,27 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnUser = findViewById<Button>(R.id.btnUser_main)
-        btnUser.setOnClickListener(View.OnClickListener{ view ->
-            Util.openActivity(this, UserActivity::class.java)
+        btnUser.setOnClickListener(View.OnClickListener{ view->
 
         })
 
         val btnEvent = findViewById<Button>(R.id.btnEvent_main)
-        btnEvent.setOnClickListener {
-            val intent = Intent(this, EventActivity::class.java)
-            startActivity(intent)
-        }
+        btnEvent.setOnClickListener(View.OnClickListener{ view->
+
+        })
 
         val btnNews = findViewById<Button>(R.id.btnNews_main)
         btnNews.setOnClickListener(View.OnClickListener{ view->
-            Util.openActivity(this, NewsActivity::class.java)
+
         })
 
         val btnTask = findViewById<Button>(R.id.btnTask_main)
         btnTask.setOnClickListener(View.OnClickListener{ view->
+
+            Toast.makeText(this, "Click en TASK", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, TaskActivity::class.java)
+            startActivity(intent)
 
         })
 
@@ -52,8 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnBooking = findViewById<Button>(R.id.btnBooking_main)
         btnBooking.setOnClickListener(View.OnClickListener{ view->
-            Util.openActivity(this,
-                BookingActivity::class.java)
+
         })
 
         val btnSurvey = findViewById<Button>(R.id.btnSurvey_main)
@@ -67,20 +67,19 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnService = findViewById<Button>(R.id.btnService_main)
-        btnService.setOnClickListener(View.OnClickListener { view ->
-
-            Util.openActivity(this, ServiceActivity::class.java)
+        btnService.setOnClickListener(View.OnClickListener{ view->
+            
         })
 
         val btnSupplier = findViewById<Button>(R.id.btnSupplier_main)
         btnSupplier.setOnClickListener(View.OnClickListener{ view->
-            Util.openActivity(this, SupplierActivity::class.java)
+            
         })
 
         val btnIncident = findViewById<Button>(R.id.btnIncident_main)
-        btnIncident.setOnClickListener {
-            Util.openActivity(this, IncidentActivity::class.java)
-        }
+        btnIncident.setOnClickListener(View.OnClickListener{ view->
+            
+        })
 
         val btnVehicle = findViewById<Button>(R.id.btnVehicle_main)
         btnVehicle.setOnClickListener(View.OnClickListener{ view->
@@ -88,25 +87,23 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnVisit = findViewById<Button>(R.id.btnVisit_main)
-        btnVisit.setOnClickListener {
-            Util.openActivity(this, VisitActivity::class.java)
-        }
+        btnVisit.setOnClickListener(View.OnClickListener{ view->
+            
+        })
 
         val btnMeeting = findViewById<Button>(R.id.btnMeeting_main)
-        btnMeeting.setOnClickListener(View.OnClickListener { view ->
-            val intent = Intent(this, MeetingActivity::class.java)
-            startActivity(intent)
+        btnMeeting.setOnClickListener(View.OnClickListener{ view->
+            
         })
 
         val btnTraining = findViewById<Button>(R.id.btnTraining_main)
         btnTraining.setOnClickListener(View.OnClickListener{ view->
-            val intent = Intent(this, TrainingActivity::class.java)
-            startActivity(intent)
+            
         })
 
         val btnInventory = findViewById<Button>(R.id.btnInventory_main)
         btnInventory.setOnClickListener(View.OnClickListener{ view->
-            Util.openActivity(this, InventoryActivity:: class.java)
+            
         })
 
         val btnVolunteer = findViewById<Button>(R.id.btnVolunteer_main)
@@ -116,8 +113,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnEntertainment = findViewById<Button>(R.id.btnEntertainment_main)
         btnEntertainment.setOnClickListener(View.OnClickListener{ view->
-            Util.openActivity(this, EntertainmentActivity::class.java)
-
+            
         })
 
         val btnLibrary = findViewById<Button>(R.id.btnLibrary_main)
@@ -131,10 +127,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btnLearning = findViewById<Button>(R.id.btnLearning_main)
-        btnLearning.setOnClickListener {
-            startActivity(Intent(this, LearningActivity::class.java))
+        btnLearning.setOnClickListener(View.OnClickListener{ view->
+            
+        })
 
-        }
         val btnHarvest = findViewById<Button>(R.id.btnHarvest_main)
         btnHarvest.setOnClickListener(View.OnClickListener{ view->
             
