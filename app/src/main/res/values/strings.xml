@@ -62,6 +62,17 @@
     <string name="learning_field_professor">Profesor</string>
     <string name="learning_empty">No hay actividades registradas. Usa Guardar para agregar.</string>
 
+    <!-- USER -->
+    <string name="MsgIncompleteData">Datos incompletos</string>
+    <string name="TextIDUser">Identificador *</string>
+    <string name="TextNameUser">Nombre *</string>
+    <string name="TextFLastnameUser">Apellido *</string>
+    <string name="TextSLastnameUser">Segundo apellido *</string>
+    <string name="TextPasswordUser">Contraseña *</string>
+    <string name="TextEmailUser">Correo *</string>
+    <string name="btnUserList">Lista usuarios</string>
+    <string name="btnLoadUser">Gestionar usuarios</string>
+    <string name="title_activity_meal_activity.kt">MealActivity.kt</string>
 
     <!-- ===== Meals (ES) ===== -->
     <string name="meals_title">Alimentos para Compartir</string>
@@ -100,15 +111,10 @@
     <string name="hint_location">Lugar</string>
     <string name="hint_organizer">Organizador</string>
 
-
-
-
-
     <!-- SurveryActivity -->
     <string name="ErrorMsgSaveAnswer">Error al guardar la respuesta.</string>
     <string name="ErrorMsgSubmitSurvey">Error al enviar la encuesta</string>
     <string name="MsgIncompleteSurvey">Por favor, responder todas las preguntas</string>
     <string name="MsgSurveySubmitted">Encuesta enviada con éxito</string>
-
     <!-- FIN USER -->
 </resources>
