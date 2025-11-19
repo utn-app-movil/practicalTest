@@ -111,6 +111,10 @@
     <string name="hint_location">Lugar</string>
     <string name="hint_organizer">Organizador</string>
 
-
+    <!-- SurveryActivity -->
+    <string name="ErrorMsgSaveAnswer">Error al guardar la respuesta.</string>
+    <string name="ErrorMsgSubmitSurvey">Error al enviar la encuesta</string>
+    <string name="MsgIncompleteSurvey">Por favor, responder todas las preguntas</string>
+    <string name="MsgSurveySubmitted">Encuesta enviada con éxito</string>
     <!-- FIN USER -->
 </resources>

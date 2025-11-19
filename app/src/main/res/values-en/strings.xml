@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PracticalTest</string>
+    <string name="app_name">Census</string>
 
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
     <string name="ErrorMsgAdd">Error when adding the information.</string>
@@ -20,7 +21,7 @@
     <string name="TextTitleDialogQuestion">Question...</string>
     <string name="TextSaveActionQuestion">Are you sure to save the information?</string>
     <string name="TextDeleteActionQuestion">Are you sure to delete the information?</string>
-           
+
     <string name="learning_title">Learning Activity</string>
     <string name="learning_add_title">New class</string>
     <string name="learning_edit_title">Edit class</string>
@@ -35,6 +36,7 @@
     <string name="action_delete">Delete</string>
     <string name="action_cancel">Cancel</string>
     <string name="learning_empty">No activities yet. Use Save to add.</string>
+
     <!-- STRING POR DEFECTO- NO MODIFICAR NI ELIMINAR -->
 
 
@@ -96,7 +98,7 @@
     <string name="meal_updated">Meal updated</string>
     <string name="meal_deleted">Meal deleted</string>
     <string name="meal_delete_confirm">Delete “%1$s”?</string>
-  
+
     <!--Esteban Sponsor-->
     <string name="sponsor_header_title">Sponsor</string>
     <string name="sponsor_id_label">Id Provedor</string>
@@ -124,7 +126,11 @@
     <string name="hint_time">Hora (HH:MM)</string>
     <string name="hint_location">Lugar</string>
     <string name="hint_organizer">Organizador</string>
-
+    <!-- Survey-->
+    <string name="ErrorMsgSaveAnswer">Error saving response.</string>
+    <string name="ErrorMsgSubmitSurvey">Error submitting survey.</string>
+    <string name="MsgIncompleteSurvey">Please answer all questions.</string>
+    <string name="MsgSurveySubmitted">Survey submitted successfully.</string>
 
 
 </resources>
