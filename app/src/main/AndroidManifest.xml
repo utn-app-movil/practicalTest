@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -30,6 +29,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".MainActivity"
             android:exported="false">
@@ -39,12 +39,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+=======
+>>>>>>> 062e2ae35131d3d1dae176b65644bc3a1f9de1d8
         <activity
             android:name=".RecipeActivity"
             android:exported="true" />
         <activity
             android:name=".LearningActivity"
             android:exported="true" />
-    </application>
 
+        <activity
+            android:name=".EventoListaActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EventoFormularioActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
 </manifest>

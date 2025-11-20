@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import cr.ac.utn.practicaltest.NewsListActivity
 import cr.ac.utn.practicaltest.databinding.ActivityMainBinding
 
+//CRUD de facturas generadas por servicios.
+//Gestión de Facturas
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
