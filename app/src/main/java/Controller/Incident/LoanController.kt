@@ -1,11 +1,12 @@
 package Controller.Incident
 
-import Data.IDataManager
+
+import Data.IdataManger
 import Entity.Book
 import Entity.Loan
 import java.util.Date
 
-class LoanController(private val dataManager: IDataManager) {
+class LoanController(private val dataManager: IdataManger) {
     fun obtenerPrestamos(): List<Loan> = dataManager.getAllLoans()
 
     fun obtenerPrestamoPorId(id: Int): Loan? =

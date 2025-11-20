@@ -1,9 +1,11 @@
 package Controller.Incident
 
-import Data.IDataManager
+
+import Data.IdataManger
 import Entity.Book
 
-class BookController(private val dataManager: IDataManager) {
+class BookController(private val dataManager: IdataManger
+) {
     fun obtenerLibros(): List<Book> = dataManager.getAllBooks()
 
     fun obtenerLibroPorId(id: Int): Book? =

@@ -1,9 +1,11 @@
 package Controller.Incident
 
-import Data.IDataManager
+
+import Data.IdataManger
 import Entity.Author
 
-class AuthorController(private val dataManager: IDataManager) {
+class AuthorController(private val dataManager: IdataManger
+) {
     fun obtenerAutores(): List<Author> = dataManager.getAllAuthors()
 
     fun obtenerAutorPorId(id: Int): Author? =
