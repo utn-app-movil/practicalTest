@@ -1,5 +1,8 @@
 package Data
 
+import Entity.Author
+import Entity.Book
+import Entity.Loan
 import Entity.Person
 
 interface IDataManager {
@@ -9,4 +12,5 @@ interface IDataManager {
     fun getAll(): List<Person>
     fun getById(id: String): Person?
     fun getByFullName(fullName: String): Person?
+
 }

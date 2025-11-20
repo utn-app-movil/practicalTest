@@ -10,10 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticalTest">
+        <activity
+            android:name=".LibraryActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".LibraryActivity"
+            android:exported="false" />
         <activity android:name=".NewsListActivity" />
         <activity android:name=".NewsFormActivity" />
         <activity
-            android:name="cr.ac.utn.practicaltest.meals.MealActivity"
+            android:name=".meals.MealActivity"
             android:exported="true"
             android:theme="@style/Theme.PracticalTest" />
         <activity
@@ -23,6 +29,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+<<<<<<< HEAD
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+=======
+>>>>>>> 062e2ae35131d3d1dae176b65644bc3a1f9de1d8
         <activity
             android:name=".RecipeActivity"
             android:exported="true" />
