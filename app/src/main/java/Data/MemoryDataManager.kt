@@ -1,9 +1,15 @@
 package Data
 
+import Entity.Author
+import Entity.Book
+import Entity.Loan
 import Entity.Person
 
 object MemoryDataManager: IDataManager {
     private  var personList = mutableListOf<Person>()
+    private val booksList = mutableListOf<Book>()
+    private val authorsList = mutableListOf<Author>()
+    private val loansList = mutableListOf<Loan>()
     override fun add(person: Person) {
         personList.add(person)
     }

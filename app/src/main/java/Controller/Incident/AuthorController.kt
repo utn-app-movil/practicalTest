@@ -1,0 +1,28 @@
+package Controller.Incident
+
+
+import Data.IdataManger
+import Entity.Author
+
+class AuthorController(private val dataManager: IdataManger
+) {
+    fun obtenerAutores(): List<Author> = dataManager.getAllAuthors()
+
+    fun obtenerAutorPorId(id: Int): Author? =
+        dataManager.getAllAuthors().find { it.Id == id }
+
+    fun buscarAutorPorNombre(nombre: String): List<Author> {
+        val nombreBusqueda = nombre.trim().lowercase()
+        return obtenerAutores().filter {
+            it.Nombre.lowercase().contains(nombreBusqueda)
+        }
+    }
+
+    fun agregarAutor(autor: Author) {
+        dataManager.addAuthor(autor)
+    }
+
+    fun hayAutores(): Boolean = obtenerAutores().isNotEmpty()
+
+    fun obtenerTotalAutores(): Int = obtenerAutores().size
+}
